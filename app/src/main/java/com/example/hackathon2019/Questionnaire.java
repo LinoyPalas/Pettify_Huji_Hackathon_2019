@@ -8,20 +8,19 @@ public class Questionnaire {
     String status; // Single\Married\With children
 
 //  living
-    String residence;
+     int residence;
     String climate;
-    String residenceSize;
-    boolean Yard;
     boolean anotherAnimal;
-    String residenceKind; // Apartment\House
 
 //  healthy
     boolean allergies;
     String allergiesKind; // kind of animal
 
 //  workPlace
-    boolean working;
-    String workKind;
+    int workStatus; //0 not working
+    boolean animalFriendly;
+  
+     public Questionnaire(){}
 
     public void setMail(String mail) {
         this.mail = mail;
@@ -35,7 +34,7 @@ public class Questionnaire {
         this.status = status;
     }
 
-    public void setResidence(String residence) {
+    public void setResidence(int residence) {
         this.residence = residence;
     }
 
@@ -43,21 +42,11 @@ public class Questionnaire {
         this.climate = climate;
     }
 
-    public void setResidenceSize(String residenceSize) {
-        this.residenceSize = residenceSize;
-    }
-
-    public void setYard(boolean yard) {
-        Yard = yard;
-    }
 
     public void setAnotherAnimal(boolean anotherAnimal) {
         this.anotherAnimal = anotherAnimal;
     }
 
-    public void setResidenceKind(String residenceKind) {
-        this.residenceKind = residenceKind;
-    }
 
     public void setAllergies(boolean allergies) {
         this.allergies = allergies;
@@ -67,28 +56,13 @@ public class Questionnaire {
         this.allergiesKind = allergiesKind;
     }
 
-    public void setWorking(boolean working) {
-        this.working = working;
-    }
 
-    public void setWorkKind(String workKind) {
-        this.workKind = workKind;
-    }
+    public void setWorkStatus(int workStatus) {
+        this.workStatus = workStatus;
 
-    public void setHours(int hours) {
-        this.hours = hours;
     }
 
     public void setAnimalFriendly(boolean animalFriendly) {
         this.animalFriendly = animalFriendly;
     }
-
-    int hours;
-    boolean animalFriendly;
-
-    public Questionnaire(){}
-
-
-
-
 }
