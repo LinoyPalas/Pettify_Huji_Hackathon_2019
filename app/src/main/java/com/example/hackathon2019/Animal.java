@@ -5,13 +5,14 @@ public class Animal {
     String location;
     int size;
     String currentOwner;
+    String area;
     String animalType;
     String animalSubCategory;
     String imageLink;
     int gender; //1 female 0 male
 
     int suitableForApartment;
-    int friendly;
+    boolean friendly;
     int treatment;
     boolean suitableForMoreAnimals;
     int climate;
@@ -41,7 +42,7 @@ public class Animal {
         this.suitableForApartment = suitableForApartment;
     }
 
-    public void setFriendly(int friendly) {
+    public void setFriendly(boolean friendly) {
         this.friendly = friendly;
     }
 
