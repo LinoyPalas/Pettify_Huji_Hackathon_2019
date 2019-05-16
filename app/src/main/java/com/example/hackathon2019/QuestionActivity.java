@@ -31,7 +31,7 @@ public class QuestionActivity extends AppCompatActivity {
     public String location;
     public String[] livingArrangement = new String[2];
     public String extraAnimals = "";
-    public String personalStatus;
+    public int personalStatus;
 
     public String job;
 
@@ -73,22 +73,22 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void single(View v) {
-        personalStatus = "Single";
+        personalStatus = 0;
         nextButton.setVisibility(View.VISIBLE);
     }
 
     public void roommates(View v) {
-        personalStatus = "Roomies";
+        personalStatus = 1;
         nextButton.setVisibility(View.VISIBLE);
     }
 
     public void married(View v) {
-        personalStatus = "Married";
+        personalStatus = 2;
         nextButton.setVisibility(View.VISIBLE);
     }
 
     public void marriedPlus(View v) {
-        personalStatus = "Married+";
+        personalStatus = 3;
         nextButton.setVisibility(View.VISIBLE);
     }
 
