@@ -259,5 +259,4 @@ public class QuestionActivity extends AppCompatActivity {
 
         setTitles();
     }
-
 }
