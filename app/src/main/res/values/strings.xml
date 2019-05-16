@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hackathon2019</string>
+    <string name="app_name">Pettify</string>
     <string name="residence_title">מגורים</string>
     <string name="continue_btn">המשך</string>
     <string name="back_btn">חזרה</string>
