@@ -5,17 +5,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 public class QuestionActivity extends AppCompatActivity {
 
     public ViewFlipper signupFlipper;
+    public TextView title, question;
 
-    public Button prevButton, nextButton;
-    public ImageButton northButton, centerButton, southButton;
+    public boolean answered = false;
+
+    public ImageButton prevButton, nextButton, northButton, centerButton, southButton;
 
     public int questionCount = 1;
     public final int[] numberOfQuestions = {3, 3, 2, 3};
+    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{}};
 
     public int currentCategory = 0;  // 0 = first category
 
@@ -34,19 +38,35 @@ public class QuestionActivity extends AppCompatActivity {
         centerButton = findViewById(R.id.centerBtn);
         southButton = findViewById(R.id.southBtn);
         prevButton.setVisibility(View.GONE);
+        nextButton.setVisibility(View.GONE);
+
+        title = findViewById(R.id.titleTextView);
+        question = findViewById(R.id.questionTextView);
+
     }
 
     public void pickNorth(View v) {
         location = "North";
-        northButton.setBackground(R.drawable.map_01_sel);
+        northButton.setBackground(getResources().getDrawable(R.drawable.map_01_sel));
+        centerButton.setBackground(getResources().getDrawable(R.drawable.map_02));
+        southButton.setBackground(getResources().getDrawable(R.drawable.map_03));
+        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void pickCenter(View v) {
         location = "Center";
+        northButton.setBackground(getResources().getDrawable(R.drawable.map_01));
+        centerButton.setBackground(getResources().getDrawable(R.drawable.map_02_sel));
+        southButton.setBackground(getResources().getDrawable(R.drawable.map_03));
+        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void pickSouth(View v) {
         location = "South";
+        northButton.setBackground(getResources().getDrawable(R.drawable.map_01));
+        centerButton.setBackground(getResources().getDrawable(R.drawable.map_02));
+        southButton.setBackground(getResources().getDrawable(R.drawable.map_03_sel));
+        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void previousView(View v) {
@@ -111,5 +131,7 @@ public class QuestionActivity extends AppCompatActivity {
             default:
                 break;
         }
+
+        nextButton.setVisibility(View.GONE);
     }
 }
