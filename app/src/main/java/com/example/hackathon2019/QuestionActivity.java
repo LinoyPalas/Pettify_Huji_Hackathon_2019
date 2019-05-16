@@ -236,7 +236,7 @@ public class QuestionActivity extends AppCompatActivity {
 
     public void pickAllergic(View v){
         allergic = true;
-        nextButton.setVisibility(View.GONE);
+        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void pickUnallergic(View v){
