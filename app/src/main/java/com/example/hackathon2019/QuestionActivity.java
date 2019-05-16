@@ -33,15 +33,13 @@ public class QuestionActivity extends AppCompatActivity {
 
     public int currentCategory = 0;  // 0 = first category
 
-    public String location;
-    public int livingArrangement;
-    public boolean extraAnimals = false;
-    public int personalStatus;
-    public boolean animalFriendly;
-
-    public int job;
-
-    public boolean allergic;
+    static public String location;
+    static public int livingArrangement;
+    static public boolean extraAnimals = false;
+    static public int personalStatus;
+    static public boolean animalFriendly;
+    static public int job;
+    static public boolean allergic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -378,11 +376,9 @@ public class QuestionActivity extends AppCompatActivity {
         }
     }
 
-    Questionnaire curQS = new Questionnaire(personalStatus, livingArrangement, location, extraAnimals,
+    static Questionnaire curQS = new Questionnaire(personalStatus, livingArrangement, location, extraAnimals,
             allergic, job, animalFriendly);
-    User user = new User(curQS);
-    RunSearch runSearch = new RunSearch(user);
-
-
+    static User user = new User(curQS);
+    static RunSearch runSearch = new RunSearch(user);
 
 }
