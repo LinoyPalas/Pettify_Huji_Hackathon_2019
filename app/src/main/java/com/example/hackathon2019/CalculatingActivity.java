@@ -16,9 +16,9 @@ public class CalculatingActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent(CalculatingActivity.this, ResultActivity.class);
+                Intent i = new Intent(CalculatingActivity.this, MainActivity.class);
                 startActivity(i);
             }
-        }, 10000);
+        }, 8000);
     }
 }
