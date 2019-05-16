@@ -6,8 +6,9 @@
     "friendly": true,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "city":
-
+    "city":"מצפה רמון",
+    "phone_num":"054587684" ,
+    "organization":"יד 4",
     "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091201/extra_large/ebff7ce75fd8b985f8c0bc593b704e03.jpg",
     "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
   },
@@ -18,7 +19,12 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090698/extra_large/90124f7588b9abd06de6257de35afae7.jpg"
+    "city":"עכו",
+    "phone_num":"054589984" ,
+    "organization":"יד 4",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090698/extra_large/90124f7588b9abd06de6257de35afae7.jpg",
+    "description": "בלה גורה מעורבת בת 3 חודשים בעלת פרווה קצרה שצפויה להיות בינונית בגודלה. כלבה חכמה שרק מתחילה את חייה רוצה לחלוק אותם עם אנשים בעלי ניסיון בחינוך גורים"
+
   },
   {
     "animale_type": "dog",
@@ -27,7 +33,12 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090630/extra_large/7f16cf563ef35f5d62f2bac08b68175c.jpg"
+    "city":"תל אביב",
+    "phone_num":"054587684" ,
+    "organization":"צער בעלי חיים",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090630/extra_large/7f16cf563ef35f5d62f2bac08b68175c.jpg",
+    "description": "באדי כלב מעורב בן 4 שנים, מחונך וממושמע. כלב טוב שרגיל לבית מחפש התחלה חדשה עם בעלים אוהבים שיעניקו לו בית חם לכל חייו"
+
   },
   {
     "animale_type": "dog",
@@ -36,7 +47,12 @@
     "friendly": false,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090799/extra_large/9e1f21c12ccdbe1daba26592f51f9151.jpg"
+    "city":"מצפה רמון",
+    "phone_num":"054997684" ,
+    "organization":"תנו לחיות לחיות",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090799/extra_large/9e1f21c12ccdbe1daba26592f51f9151.jpg",
+    "description": "ג'סי כלבה מעורבת בת 3 שנים, מאוד עדינה וחששנית. כלבה חמודה שברגע שהיא מכירה ונפתחת מראה אופי מדהים, זקוקה לבעלים סבלניים. "
+
   },
   {
     "animale_type": "dog",
@@ -45,7 +61,12 @@
     "friendly": false,
     "treatment": 1,
     "suitable_for_more_animals": false,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090853/extra_large/def1d6b7fa983fd18401138679a2ce8f.jpg"
+    "city":"קיסריה",
+    "phone_num":"054487684" ,
+    "organization":"חדרה אוהבת חיות",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090853/extra_large/def1d6b7fa983fd18401138679a2ce8f.jpg",
+    "description": "לולה כלבה דלמטית מקסימה, מתאימה לדירה ולא דורשת הרבה טיפול אוהבת להתבודד מחפשת בית חם."
+
   },
   {
     "animale_type": "dog",
@@ -54,7 +75,12 @@
     "friendly": true,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090719/extra_large/4440a89342b62374963d3fb4d1be6427.jpg"
+    "city":"יבנה",
+    "phone_num":"054587684" ,
+    "organization":"יד 4",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090719/extra_large/4440a89342b62374963d3fb4d1be6427.jpg",
+    "description": "טאקינקבה, בת שנה, כלבת רועים מעורבת בת שנה, עדינה מאוד וחששנית. כלבה שצריכה זמן להיפתח זקוקה לבעלים סבלניים ועדינים כמוה, שיחנכו, יאהבו ויתנו לה בית חם"
+
   },
   {
     "animale_type": "dog",
@@ -63,7 +89,12 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": false,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090758/extra_large/018165e482bbed4e027d5d6b064cebf3.jpg"
+    "city":"אילת",
+    "phone_num":"054587684" ,
+    "organization":"אילת אוהבת חיות",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090758/extra_large/018165e482bbed4e027d5d6b064cebf3.jpg",
+    "description": " כלב ביגל קטן ומתוק, מחפש בית אוהב שיטפל וישחק איתו"
+
   },
   {
     "animale_type": "dog",
@@ -72,7 +103,12 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": false,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090883/extra_large/7b8b4ceef4664cd482fd3d7ac89a0174.jpg"
+    "city":"צפת",
+    "phone_num":"054587684" ,
+    "organization":"חדרה אוהבת חיות",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090883/extra_large/7b8b4ceef4664cd482fd3d7ac89a0174.jpg",
+    "description": "רובי כלבה מעורבת בת 4 חודשים, שובבה ונמרצת. גורה שובת לב רוצה להתחיל פרק חדש עם בעלים אחראיים שיודעים לחנך ובעיקר לאהוב "
+
   },
   {
     "animale_type": "dog",
@@ -81,7 +117,12 @@
     "friendly": false,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090911/extra_large/d4e31bb67251895732eb4f7a33eaa3fb.jpg"
+    "city":"תל אביב",
+    "phone_num":"054587684" ,
+    "organization":"תנו לחיות לחיות",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090911/extra_large/d4e31bb67251895732eb4f7a33eaa3fb.jpg",
+    "description": "מוניק, בת 7 שנים כלבה מעורבת בינונית בגודלה בת 7 שנים, מחונכת וחכמה. כלבה בוגרת שרגילה לחיים בבית עם כלבה נוספת (מרגו) והיא תשמח למצוא בית יחד איתה עם בעלים אוהבים ואחראיים "
+
   },
   {
     "animale_type": "dog",
@@ -90,7 +131,12 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091017/large/948423ca1499f39e3616ad50ad56e22f.jpg"
+    "city":"אשקלון",
+    "phone_num":"054587684" ,
+    "organization":"יד 4",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091017/large/948423ca1499f39e3616ad50ad56e22f.jpg",
+    "description": "לוק, בן 7 חודשי nכלב מעורב ובינוני בגודלו בן 7 חודשים, צעיר וסקרן. כלב מתוק שמתחיל את חייו ומחפש מישהו שיעניק לו ביטחון ובית לכל החיים. זקוק עדיין לחינוך ולהרבה פעילות "
+
   },
   {
     "animale_type": "cat",
