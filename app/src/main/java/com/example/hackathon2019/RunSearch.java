@@ -1,30 +1,24 @@
 package com.example.hackathon2019;
 
-import android.util.Pair;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.lang.reflect.Array;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
 
-class UniqePair implements Comparable<UniqePair>{
+class UniquePair implements Comparable<UniquePair>{
     public Integer score;
     public Animal animal;
 
-    UniqePair(int score, Animal animal){
+    UniquePair(int score, Animal animal){
         this.score = score;
         this.animal = animal;
     }
 
-    public int compareTo(UniqePair other){
+    public int compareTo(UniquePair other){
         return this.score.compareTo(other.score);
     }
 }
@@ -34,6 +28,8 @@ public class RunSearch {
     ArrayList<Animal> allAnimals;
     Match matcher;
     float[] scores;
+    ArrayList<UniquePair> bestMatch;
+    
 
     RunSearch(User user) {
         this.user = user;
@@ -69,16 +65,15 @@ public class RunSearch {
 
     public void runMatching(){
         int numOfAnimalsInDatabase = this.allAnimals.size();
-        ArrayList<UniqePair> results = new ArrayList<>();
+        ArrayList<UniquePair> results = new ArrayList<>();
 
         for (int i = 0; i < numOfAnimalsInDatabase; i++){
             Match matcher = new Match(this.allAnimals.get(i), this.user);
-            results.add(new UniqePair(matcher.getMatch(), this.allAnimals.get(i)));
+            results.add(new UniquePair(matcher.getMatch(), this.allAnimals.get(i)));
         }
         Collections.reverse(results);
 
-
-
-
+        this.bestMatch = new ArrayList<UniquePair>(results.subList(0, 6));
     }
+    
 }
