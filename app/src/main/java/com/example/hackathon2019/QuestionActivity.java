@@ -50,9 +50,9 @@ public class QuestionActivity extends AppCompatActivity {
 
         title = findViewById(R.id.titleTextView);
         question = findViewById(R.id.questionTextView);
-        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/OS Aran_W_500FFC.ttf");
-        title.setTypeface(custom_font);
-        question.setTypeface(custom_font);
+//        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/OSAran_W_500FFC.ttf");
+//        title.setTypeface(custom_font);
+//        question.setTypeface(custom_font);
 
         signupFlipper = findViewById(R.id.signup_flipper);
 
