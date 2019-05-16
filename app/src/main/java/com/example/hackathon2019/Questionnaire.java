@@ -17,7 +17,7 @@ public class Questionnaire {
 
 //  healthy
     boolean allergies;
-    String allergiesKind;
+    String allergiesKind; // kind of animal
 
 //  workPlace
     boolean working;
