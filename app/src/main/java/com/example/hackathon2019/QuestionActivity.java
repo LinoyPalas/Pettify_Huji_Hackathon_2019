@@ -266,17 +266,18 @@ public class QuestionActivity extends AppCompatActivity {
     public void nextView(View v) {
         signupFlipper.setInAnimation(this, android.R.anim.slide_in_left);
         signupFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
-        signupFlipper.showNext();
-
-        questionCount++;
-        if (questionCount > 0 || currentCategory > 0) {
-            prevButton.setVisibility(View.VISIBLE);
-        }
-
         if (questionCount == numberOfQuestions[currentCategory] && currentCategory == 3) {
             nextButton.setVisibility(View.GONE);
+            //TODO move to the loading screen
         }
         else{
+            signupFlipper.showNext();
+
+            questionCount++;
+            if (questionCount > 0 || currentCategory > 0) {
+                prevButton.setVisibility(View.VISIBLE);
+            }
+
             nextButton.setVisibility(View.GONE);
             if (questionCount == 2 && currentCategory == 0) {
                 nextButton.setVisibility(View.VISIBLE);
