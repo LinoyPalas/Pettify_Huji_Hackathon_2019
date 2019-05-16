@@ -4,19 +4,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ViewFlipper;
 
 public class QuestionActivity extends AppCompatActivity {
 
     public ViewFlipper signupFlipper;
 
-    public Button prevButton;
-    public Button nextButton;
+    public Button prevButton, nextButton;
+    public ImageButton northButton, centerButton, southButton;
 
     public int questionCount = 1;
     public final int[] numberOfQuestions = {3, 3, 2, 3};
 
-    public int currentCategory = 0;
+    public int currentCategory = 0;  // 0 = first category
+
+    public String location;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +30,22 @@ public class QuestionActivity extends AppCompatActivity {
 
         prevButton = findViewById(R.id.prevButton);
         nextButton = findViewById(R.id.nextButton);
+        northButton = findViewById(R.id.northBtn);
+        centerButton = findViewById(R.id.centerBtn);
+        southButton = findViewById(R.id.southBtn);
         prevButton.setVisibility(View.GONE);
+    }
+
+    public void pickNorth(View v) {
+        location = "North";
+    }
+
+    public void pickCenter(View v) {
+        location = "Center";
+    }
+
+    public void pickSouth(View v) {
+        location = "South";
     }
 
     public void previousView(View v) {
