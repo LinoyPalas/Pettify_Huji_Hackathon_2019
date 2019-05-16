@@ -5,11 +5,11 @@ public class Questionnaire {
     String name;
     String mail;
     int age;
-    String status; // Single\Married\With children
+    String familyStatus; // Single\Married\With children
 
 //  living
      int residence;
-    String climate;
+    String area; //north, south, center
     boolean anotherAnimal;
 
 //  healthy
@@ -30,24 +30,22 @@ public class Questionnaire {
         this.age = age;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setFamilyStatus(String familyStatus) {
+        this.familyStatus = familyStatus;
     }
 
     public void setResidence(int residence) {
         this.residence = residence;
     }
 
-    public void setClimate(String climate) {
-        this.climate = climate;
+    public void setArea(String area) {
+        this.area = area;
     }
-
 
     public void setAnotherAnimal(boolean anotherAnimal) {
         this.anotherAnimal = anotherAnimal;
     }
-
-
+    
     public void setAllergies(boolean allergies) {
         this.allergies = allergies;
     }
