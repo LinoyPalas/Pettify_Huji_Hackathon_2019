@@ -2,6 +2,7 @@ package com.example.hackathon2019;
 import java.net.URL;
 
 public class Animal {
+
     String animalType;
     String area;
     int suitableForApartment;
