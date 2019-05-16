@@ -11,8 +11,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(startIntent);
             }
         });
-
+    }
 
 //        Button addActivityBtn = findViewById(R.id.AddBtn);
 //        addActivityBtn.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +41,5 @@ public class MainActivity extends AppCompatActivity {
 //                t3.setText(resAsStr);
 //            }
 //        });
-
-    }
 
 }
