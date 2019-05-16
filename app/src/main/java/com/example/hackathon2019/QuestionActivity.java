@@ -22,7 +22,7 @@ public class QuestionActivity extends AppCompatActivity {
     public ImageButton friendly, unfriendly;
 
     public int questionCount = 0;
-    public final int[] numberOfQuestions = {3, 1, 1, 2};
+    public final int[] numberOfQuestions = {3, 1, 1, 1};
     public final String[] categoryTitles = {"מגורים", "אישי", "עבודה", "בריאותי"};
     public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי"}, {"אנימל פרנדלי"}, {"אלרגיות?", "נכות?"}};
 
@@ -128,6 +128,11 @@ public class QuestionActivity extends AppCompatActivity {
         ground.setVisibility(View.GONE);
         groundWithGarden.setVisibility(View.GONE);
         aboveGround.setVisibility(View.GONE);
+        privateHome.setBackground(getResources().getDrawable(R.drawable.private_home_sel));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment));
+        ground.setBackground(getResources().getDrawable(R.drawable.ground));
+        aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground));
+        groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden));
     }
 
     public void apartment(View v) {
@@ -136,21 +141,41 @@ public class QuestionActivity extends AppCompatActivity {
         groundWithGarden.setVisibility(View.VISIBLE);
         aboveGround.setVisibility(View.VISIBLE);
         nextButton.setVisibility(View.GONE);
+        privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment_sel));
+        ground.setBackground(getResources().getDrawable(R.drawable.ground));
+        aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground));
+        groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden));
     }
 
     public void groundWithGarden(View v) {
         livingArrangement[1] = "withGarden";
         nextButton.setVisibility(View.VISIBLE);
+        privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment));
+        ground.setBackground(getResources().getDrawable(R.drawable.ground));
+        aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground));
+        groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden_sel));
     }
 
     public void ground(View v) {
         livingArrangement[1] = "ground";
         nextButton.setVisibility(View.VISIBLE);
+        privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment));
+        ground.setBackground(getResources().getDrawable(R.drawable.ground_sel));
+        aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground));
+        groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden));
     }
 
     public void aboveGround(View v) {
         livingArrangement[1] = "aboveGround";
         nextButton.setVisibility(View.VISIBLE);
+        privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment));
+        ground.setBackground(getResources().getDrawable(R.drawable.ground));
+        aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground_sel));
+        groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden));
     }
 
     public void pickNorth(View v) {
@@ -248,16 +273,21 @@ public class QuestionActivity extends AppCompatActivity {
             prevButton.setVisibility(View.VISIBLE);
         }
 
-        nextButton.setVisibility(View.GONE);
-        if (questionCount == 2 && currentCategory == 0) {
-            nextButton.setVisibility(View.VISIBLE);
+        if (questionCount == numberOfQuestions[currentCategory] && currentCategory == 3) {
+            nextButton.setVisibility(View.GONE);
         }
-        if (questionCount == numberOfQuestions[currentCategory]) {
-            questionCount = 0;
-            currentCategory++;
-        }
+        else{
+            nextButton.setVisibility(View.GONE);
+            if (questionCount == 2 && currentCategory == 0) {
+                nextButton.setVisibility(View.VISIBLE);
+            }
+            if (questionCount == numberOfQuestions[currentCategory]) {
+                questionCount = 0;
+                currentCategory++;
+            }
 
-        setTitles();
+            setTitles();
+        }
     }
 
 }
