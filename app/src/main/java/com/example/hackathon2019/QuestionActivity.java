@@ -383,4 +383,9 @@ public class QuestionActivity extends AppCompatActivity {
 
     Questionnaire curQS = new Questionnaire(personalStatus, livingArrangement, location, extraAnimals,
             allergic, job, animalFriendly);
+    User user = new User(curQS);
+    RunSearch runSearch = new RunSearch(user);
+
+
+
 }
