@@ -8,7 +8,5 @@ public class User {
         this.name = questionnaire.name;
         this.questionnaire = questionnaire;
     }
-
-
-
+    
 }
