@@ -15,21 +15,25 @@ public class QuestionActivity extends AppCompatActivity {
     public ViewFlipper signupFlipper;
     public TextView title, question;
 
-    public boolean answered = false;
+    public int reset = 0;
 
     public ImageButton prevButton, nextButton, northButton, centerButton, southButton;
     public ImageButton privateHome,apartment, ground, groundWithGarden, aboveGround;
+    public ImageButton friendly, unfriendly;
 
     public int questionCount = 0;
-    public final int[] numberOfQuestions = {3, 3, 3, 2};
+    public final int[] numberOfQuestions = {3, 1, 1, 2};
     public final String[] categoryTitles = {"מגורים", "אישי", "עבודה", "בריאותי"};
-    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי"}};
+    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי"}, {"אנימל פרנדלי"}, {"אלרגיות?", "נכות?"}};
 
     public int currentCategory = 0;  // 0 = first category
 
     public String location;
     public String[] livingArrangement = new String[2];
     public String extraAnimals = "";
+    public String personalStatus;
+
+    public String job;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,12 +50,19 @@ public class QuestionActivity extends AppCompatActivity {
         prevButton.setVisibility(View.GONE);
         nextButton.setVisibility(View.GONE);
 
+        privateHome = findViewById(R.id.privateHome);
+        apartment = findViewById(R.id.apartment);
         ground = findViewById(R.id.ground);
         groundWithGarden = findViewById(R.id.groundWithGarden);
         aboveGround = findViewById(R.id.aboveGround);
         ground.setVisibility(View.GONE);
         groundWithGarden.setVisibility(View.GONE);
         aboveGround.setVisibility(View.GONE);
+
+        friendly = findViewById(R.id.animal_friendly);
+        unfriendly = findViewById(R.id.unfriendly);
+        friendly.setVisibility(View.GONE);
+        unfriendly.setVisibility(View.GONE);
 
         title = findViewById(R.id.titleTextView);
         question = findViewById(R.id.questionTextView);
@@ -60,34 +71,48 @@ public class QuestionActivity extends AppCompatActivity {
 
     }
 
+    public void single(View v) {
+        personalStatus = "Single";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void roommates(View v) {
+        personalStatus = "Roomies";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void married(View v) {
+        personalStatus = "Married";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void marriedPlus(View v) {
+        personalStatus = "Married+";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
     public void dog(View v) {
         extraAnimals += "dog, ";
-        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void cat(View v) {
         extraAnimals += "cat, ";
-        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void fish(View v) {
         extraAnimals += "fish, ";
-        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void lizard(View v) {
         extraAnimals += "lizard, ";
-        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void bird(View v) {
         extraAnimals += "bird, ";
-        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void rabbit(View v) {
         extraAnimals += "rabbit, ";
-        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void setTitles() {
@@ -102,7 +127,6 @@ public class QuestionActivity extends AppCompatActivity {
         ground.setVisibility(View.GONE);
         groundWithGarden.setVisibility(View.GONE);
         aboveGround.setVisibility(View.GONE);
-//        buttonEffect(v);
     }
 
     public void apartment(View v) {
@@ -152,6 +176,38 @@ public class QuestionActivity extends AppCompatActivity {
         nextButton.setVisibility(View.VISIBLE);
     }
 
+
+    public void pickFullTimeJob(View v){
+        job = "full time";
+        nextButton.setVisibility(View.GONE);
+        friendly.setVisibility(View.VISIBLE);
+        unfriendly.setVisibility(View.VISIBLE);
+    }
+
+    public void pickHalfTimeJob(View v){
+        job = "half time";
+        nextButton.setVisibility(View.GONE);
+        friendly.setVisibility(View.VISIBLE);
+        unfriendly.setVisibility(View.VISIBLE);
+    }
+
+    public void pickunemployed(View v){
+        job = "unemployed";
+        nextButton.setVisibility(View.VISIBLE);
+        friendly.setVisibility(View.GONE);
+        unfriendly.setVisibility(View.GONE);
+    }
+
+    public void pickAnimalFriendly(View v){
+        job = "unemployed";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void unFriendly(View v){
+        job = "unemployed";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
     public void previousView(View v) {
         signupFlipper.setInAnimation(this, R.anim.slide_in_right);
         signupFlipper.setOutAnimation(this, R.anim.slide_out_left);
@@ -193,24 +249,4 @@ public class QuestionActivity extends AppCompatActivity {
         setTitles();
     }
 
-//    public static void buttonEffect(View button){
-//        button.setOnTouchListener(new View.OnTouchListener() {
-//
-//            public boolean onTouch(View v, MotionEvent event) {
-//                switch (event.getAction()) {
-//                    case MotionEvent.ACTION_DOWN: { // TODO: change color
-//                        v.getBackground().setColorFilter(0xe0f47521, PorterDuff.Mode.SRC_ATOP);
-//                        v.invalidate();
-//                        break;
-//                    }
-////                    case MotionEvent.ACTION_UP: {
-////                        v.getBackground().clearColorFilter();
-////                        v.invalidate();
-////                        break;
-////                    }
-//                }
-//                return false;
-//            }
-//        });
-//    }
 }
