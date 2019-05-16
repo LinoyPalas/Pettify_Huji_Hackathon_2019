@@ -305,6 +305,34 @@
             </LinearLayout>
         </LinearLayout>
 
+        <!--- Category 4 question 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp">
+
+                <ImageButton
+                    android:id="@+id/allergic"
+                    android:background="@drawable/allergic"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:onClick="pickAllergic" />
+
+                <ImageButton
+                    android:id="@+id/unallergic"
+                    android:background="@drawable/unallergic"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:onClick="pickUnallergic" />
+            </LinearLayout>
+        </LinearLayout>
+
         <!--- End Questions Layouts -->
 
 
