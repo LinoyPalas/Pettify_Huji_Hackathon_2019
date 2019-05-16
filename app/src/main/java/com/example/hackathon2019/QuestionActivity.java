@@ -137,7 +137,7 @@ public class QuestionActivity extends AppCompatActivity {
 
     public void lizard(View v) {
         extraAnimals = true;
-        lizard.setBackground(getResources().getDrawable(R.drawable.lizard));
+        lizard.setBackground(getResources().getDrawable(R.drawable.lizard_sel));
     }
 
     public void bird(View v) {
