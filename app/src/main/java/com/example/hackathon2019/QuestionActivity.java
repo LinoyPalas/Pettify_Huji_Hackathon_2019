@@ -35,6 +35,8 @@ public class QuestionActivity extends AppCompatActivity {
 
     public String job;
 
+    public boolean allergic;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,7 +65,6 @@ public class QuestionActivity extends AppCompatActivity {
         unfriendly = findViewById(R.id.unfriendly);
         friendly.setVisibility(View.GONE);
         unfriendly.setVisibility(View.GONE);
-
         title = findViewById(R.id.titleTextView);
         question = findViewById(R.id.questionTextView);
 
@@ -205,6 +206,16 @@ public class QuestionActivity extends AppCompatActivity {
 
     public void unFriendly(View v){
         job = "unemployed";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void pickAllergic(View v){
+        allergic = true;
+        nextButton.setVisibility(View.GONE);
+    }
+
+    public void pickUnallergic(View v){
+        allergic = false;
         nextButton.setVisibility(View.VISIBLE);
     }
 

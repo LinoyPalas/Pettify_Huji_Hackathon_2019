@@ -52,8 +52,9 @@ public class RunSearch {
                 int treatment = Integer.parseInt(arr.getJSONObject(i).getString("treatment"));
                 boolean suitableForMoreAnimals = Boolean.parseBoolean(arr.getJSONObject(i).getString("suitable_for_more_animals"));
                 String imageLink = arr.getJSONObject(i).getString("image_link");
+                String description = arr.getJSONObject(i).getString("description");
 
-                result.add(new Animal(type, area, imageLink, "", suitableForApartment,
+                result.add(new Animal(type, area, imageLink, description, suitableForApartment,
                         friendly, treatment, suitableForMoreAnimals));
             }
         } catch (Exception ex) {

@@ -24,7 +24,7 @@ public class Match {
     private boolean allergyMatch()
     {
         //return true if not allergic or not allergic to this animal.
-        return !(user.questionnaire.allergies && user.questionnaire.allergiesKind.equals(animal.animalType));
+        return !(user.questionnaire.allergies);
     }
 
     private boolean otherAnimalsMatch()

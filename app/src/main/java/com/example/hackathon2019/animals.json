@@ -6,9 +6,8 @@
     "friendly": true,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "city":"נהריה",
-    "phone_num": "0544735977",
-    "organization": "SOS",
+    "city":
+
     "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091201/extra_large/ebff7ce75fd8b985f8c0bc593b704e03.jpg",
     "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
   },
@@ -19,11 +18,7 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "city":"חיפה",
-    "phone_num": "0544687123",
-    "organization": "אנימלס",
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090698/extra_large/90124f7588b9abd06de6257de35afae7.jpg",
-    "description": "אריק הוא כלב קטן, שאוהב לרוץ ולקפוץ. אריק ידידותי לאנשים וכלבים אחרים. אריק מחפש בעלים חדשים. "
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090698/extra_large/90124f7588b9abd06de6257de35afae7.jpg"
   },
   {
     "animale_type": "dog",
@@ -32,12 +27,7 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "city":"ירושלים",
-    "phone_num": "0524675843",
-    "organization": "ירושלים אוהבת חיות",
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090630/extra_large/7f16cf563ef35f5d62f2bac08b68175c.jpg",
-    "description": "אלסקה היא כלבה גדולה וידידותית, אוהבת הרבה מרחב, מעדיפה בית עם חצר שתוכל לרוץ בנחת. אלסקה מחפשת משפחה חדשה להצטרף אליה."
-
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090630/extra_large/7f16cf563ef35f5d62f2bac08b68175c.jpg"
   },
   {
     "animale_type": "dog",
@@ -46,12 +36,7 @@
     "friendly": false,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "city":"חיפה",
-    "phone_num": "0544321456",
-    "organization": "צער בעלי חיים",
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090799/extra_large/9e1f21c12ccdbe1daba26592f51f9151.jpg",
-    "description": "רבקה היא כלבה גדולה שעברה הרבה בחיים, מחפשת בעלים חדשים שידאגו לה בגיל השלישי. לרבקה אין הרבה דרישות מלבד חום ואהבה "
-
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090799/extra_large/9e1f21c12ccdbe1daba26592f51f9151.jpg"
   },
   {
     "animale_type": "dog",
@@ -60,12 +45,7 @@
     "friendly": false,
     "treatment": 1,
     "suitable_for_more_animals": false,
-    "city":"עכו",
-    "phone_num": "0523675849",
-    "organization": "יד 4",
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090853/extra_large/def1d6b7fa983fd18401138679a2ce8f.jpg",
-    "description": "רובי הוא כלב דלמטי יפייפה. בן כמעט 4, מתאים למגורים בדירה, ולא דורש הרבה טיפול. רובי מסוג הכלבים שאוהבים את השקט והלבד."
-
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090853/extra_large/def1d6b7fa983fd18401138679a2ce8f.jpg"
   },
   {
     "animale_type": "dog",
@@ -74,12 +54,7 @@
     "friendly": true,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "city":"תל אביב",
-    "phone_num": "0523675849",
-    "organization": "צער בעלי חיים",
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090719/extra_large/4440a89342b62374963d3fb4d1be6427.jpg",
-    "description": "ג'וי כלבה מעורבת בת שנתיים, בינונית בגודלה ובעלת שיער קצר. כלבה אלגנטית ועדינה שמתהלכת כמו נסיכה, זקוקה לבעלים מסורים שישרו עליה בטחון ויאהבו לנצח"
-
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090719/extra_large/4440a89342b62374963d3fb4d1be6427.jpg"
   },
   {
     "animale_type": "dog",
@@ -88,12 +63,7 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": false,
-    "city":"מצפה רמון",
-    "phone_num": "0584669832",
-    "organization": "תנו לחיות לחיות",
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090758/extra_large/018165e482bbed4e027d5d6b064cebf3.jpg",
-    "description": "פיט הוא כלב מעורב רגיש, עדין וחכם בן 3 שנים שמסתדר עם כולם – אנשים, ילדים וכלבים. כלב שנהנה ממשחק עם חברים על ארבע ויודע גם לבקש תשומת לב אנושית בדמות חיבוקים ונשיקות. "
-
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090758/extra_large/018165e482bbed4e027d5d6b064cebf3.jpg"
   },
   {
     "animale_type": "dog",
@@ -102,12 +72,7 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": false,
-    "city":"קיסריה",
-    "phone_num": "0567234574",
-    "organization": "חדרה אוהבת חיות",
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090883/extra_large/7b8b4ceef4664cd482fd3d7ac89a0174.jpg",
-    "description": "טאקי כלבת רועים מעורבת בת שנה, עדינה מאוד וחששנית. כלבה שצריכה זמן להיפתח זקוקה לבעלים סבלניים ועדינים כמוה, שיחנכו, יאהבו ויתנו לה בית חם."
-
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090883/extra_large/7b8b4ceef4664cd482fd3d7ac89a0174.jpg"
   },
   {
     "animale_type": "dog",
@@ -116,12 +81,7 @@
     "friendly": false,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "city":"רחובות",
-    "phone_num": "074356723",
-    "organization": "תנו לחיות לחיות",
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090911/extra_large/d4e31bb67251895732eb4f7a33eaa3fb.jpg",
-    "description": "ג'סי כלבה מעורבת בת 3 שנים, מאוד עדינה וחששנית. כלבה חמודה שברגע שהיא מכירה ונפתחת מראה אופי מדהים, זקוקה לבעלים סבלניים"
-
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090911/extra_large/d4e31bb67251895732eb4f7a33eaa3fb.jpg"
   },
   {
     "animale_type": "dog",
@@ -130,12 +90,7 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "city":"פרדס חנה",
-    "phone_num": "0544758923",
-    "organization": "חדרה אוהבת חיות",
-    "image_link": "https://scontent.flhr5-1.fna.fbcdn.net/v/t1.0-9/229224_108633759223357_577171_n.jpg?_nc_cat=107&_nc_ht=scontent.flhr5-1.fna&oh=5e2007032dabec4ba2343645f553d2b9&oe=5D5C6BC4",
-    "description": "לאקי כלב צעיר ומעורב בן שנה בגודל בינוני-גדול. כלב מקסים וחברותי שאוהב ילדים ומבוגרים כאחד, מסתדר עם כלבים אך לא עם ציפורים וחיות משק ויתאים לכל משפחה."
-
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091017/large/948423ca1499f39e3616ad50ad56e22f.jpg"
   },
   {
     "animale_type": "cat",
@@ -144,12 +99,7 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": false,
-    "city":"חיפה",
-    "phone_num": "064789652",
-    "organization": "צער בעלי חיים",
-    "image_link": "http://www.best-friends.co.il/f-users/user_105106/website_105116/images/thumbs/W_960_6824-25.jpg",
-    "description": "לולה היא חתולה מעורבת בת שנה. חתולה חששנית זקוקה לבעלים סבלניים שיגרמו לה להרגיש בבית, לצבור ביטחון ולהראות את אופייה האמיתי"
-
+    "image_link": "https://img.wcdn.co.il/f_auto"
   },
   {
     "animale_type": "cat",
@@ -158,12 +108,7 @@
     "friendly": true,
     "treatment": 1,
     "suitable_for_more_animals": false,
-    "city":"תל אביב",
-    "phone_num": "0543678364",
-    "organization": "צער בעלי חיים",
-    "image_link": "http://cdn.babamail.co.il/Images/2014/12/24/784e822f-4b1a-42a1-9330-46ba0795c641.jpg",
-    "description": "פוצ'קה היא חתולה מעורבת בת שנתיים, ביישנית ורגועה שנמסרה אלינו ביחד עם אחיה (גאטו). היא קצת חששנית בעקבות הנטישה שחוותה ומקווה לזכות שוב בבית חם ואוהב."
-
+    "image_link": "http://cdn.babamail.co.il/Images/2014/12/24/784e822f-4b1a-42a1-9330-46ba0795c641.jpg"
   },
   {
     "animale_type": "cat",
@@ -172,12 +117,7 @@
     "friendly": false,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "city":"חדרה",
-    "phone_num": "0524356892",
-    "organization": "יד 4",
-    "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Siamese_cat.JPG/250px-Siamese_cat.JPG",
-    "description": "מג'יק חתולה מעורבת בת 7 חודשים, חששנית וזהירה. חתולה צעירה מחפשת התחלה מבטיחה עם בעלים מחויבים שיתנו לה הרבה ליטופים ואהבה."
-
+    "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Siamese_cat.JPG/250px-Siamese_cat.JPG"
   },
   {
     "animale_type": "cat",
@@ -186,12 +126,7 @@
     "friendly": false,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "city":"פרדס חנה",
-    "phone_num": "0546728343",
-    "organization": "חדרה אוהבת חיות",
-    "image_link": "https://www.dailybuzz.co.il/wp-content/uploads/2016/10/mn1.png",
-    "description": "מן היא חתולה מעורבת בת שנה ו-7 חודשים, חמודה ומעט חששנית. מחפשת בעלים שיפנקו אותה ויתנו לה להרגיש כמו נסיכה בבית חם ואוהב."
-
+    "image_link": "https://www.dailybuzz.co.il/wp-content/uploads/2016/10/mn1.png"
   },
   {
     "animale_type": "cat",
@@ -200,12 +135,7 @@
     "friendly": true,
     "treatment": 1,
     "suitable_for_more_animals": false,
-    "city":"ירושלים",
-    "phone_num": "054389273",
-    "organization": "ירושלים אוהבת חיות",
-    "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0aElj5iYkC8iywAMJJ719QFVDh5QVOFp0yKwUHyiLqX9R6hMb",
-    "description": "פופי חתולה מעורבת ומתוקה בת שנה. חתולה מאוד חמודה שאוהבת ליטופים ומגיבה בקול מתוק מחכה לבית חם ואוהב. "
-
+    "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0aElj5iYkC8iywAMJJ719QFVDh5QVOFp0yKwUHyiLqX9R6hMb"
   },
   {
     "animale_type": "hamster",
@@ -214,12 +144,7 @@
     "friendly": true,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "city":"באר שבע",
-    "phone_num": "0544678231",
-    "organization": "כלבים של אף אחד",
-    "image_link": "https://www.ken-hatuki.co.il/wp-content/uploads/2013/03/HamsterREX468x362-main_Full.jpg",
-    "description": "צ'ופי הוא אוגר חמוד להפליא בן חודש שמחפש בית חם ואוהב. הוא מתוק ורגיל למגע ילדים. "
-
+    "image_link": "https://www.ken-hatuki.co.il/wp-content/uploads/2013/03/HamsterREX468x362-main_Full.jpg"
   },
   {
     "animale_type": "lizard",
@@ -228,12 +153,7 @@
     "friendly": false,
     "treatment": 1,
     "suitable_for_more_animals": false,
-    "city":"חדרה",
-    "phone_num": "0547876321",
-    "organization": "חדרה אוהבת חיות",
-    "image_link": "https://www.tiuli.com/image/11b2213f3396c4e4fc0639ee33f9fdb0.jpg?&width=830&height=470",
-    "description": "פוקה היא לטאה צעירה ויפיפיה. מחפשת בית אוהב. פוקה לא מסתדרת עם עוד בלעי חיים"
-
+    "image_link": "https://www.tiuli.com/image/11b2213f3396c4e4fc0639ee33f9fdb0.jpg?&width=830&height=470"
   },
   {
     "animale_type": "snake",
@@ -242,12 +162,7 @@
     "friendly": false,
     "treatment": 2,
     "suitable_for_more_animals": false,
-    "city":"תל אביב",
-    "phone_num": "027364776",
-    "organization": "תנו לחיות לחיות",
-    "image_link": "https://www.hashikma-holon.co.il/wp-content/uploads/2018/06/c7269ecb5462f23744119df16554272a-e1529398191949.jpg",
-    "description": "כרכן בת שנה וחצי מקסימה, חברותית, לא תוקפת ניתן לשחק איתה ביד. "
-
+    "image_link": "https://www.hashikma-holon.co.il/wp-content/uploads/2018/06/c7269ecb5462f23744119df16554272a-e1529398191949.jpg"
   },
   {
     "animale_type": "turtle",
@@ -256,12 +171,7 @@
     "friendly": false,
     "treatment": 0,
     "suitable_for_more_animals": true,
-    "city":"אילת",
-    "phone_num": "056789778",
-    "organization": "יד 4",
-    "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Testudo_graeca02.jpg/250px-Testudo_graeca02.jpg",
-    "description": "צב רגל אדומה (יבשה) תינוק מקסים ומטופח. "
-
+    "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Testudo_graeca02.jpg/250px-Testudo_graeca02.jpg"
   },
   {
     "animale_type": "parrot",
@@ -270,12 +180,7 @@
     "friendly": true,
     "treatment": 0,
     "suitable_for_more_animals": true,
-    "city":"חיפה",
-    "phone_num": "0544678898",
-    "organization": "יד 4",
-    "image_link": "http://www.biopet.co.il/app/uploads/2016/02/dwf.png",
-    "description": "אקלקטוס בן שנה וחודש, מהמם ביופיו האכלת יד, מדבר בצורה יפה ולומד הרבה מילים. .רגוע, לא נושך וחברותי מאוד "
-
+    "image_link": "http://www.biopet.co.il/app/uploads/2016/02/dwf.png"
   },
   {
     "animale_type": "parrot",
@@ -284,11 +189,6 @@
     "friendly": true,
     "treatment": 0,
     "suitable_for_more_animals": true,
-    "city":"תל אביב",
-    "phone_num": "052344543",
-    "organization": "צער בעלי חיים",
-    "image_link": "https://www.mikmik.co.il/wp-content/uploads/2015/12/P597060.jpg",
-    "description": "תוכי מסוג ג'אקו יפיפיה, בת 5. מעט מדברת ומחקה בעלי חיים. "
-
+    "image_link": "https://www.mikmik.co.il/wp-content/uploads/2015/12/P597060.jpg"
   }
 ]
