@@ -13,7 +13,7 @@ public class Animal {
     int suitableForApartment;
     int friendly;
     int treatment;
-    int suitableForMoreAnimals;
+    boolean suitableForMoreAnimals;
     int climate;
     int suitableForAllergic;
 
@@ -49,7 +49,7 @@ public class Animal {
         this.treatment = treatment;
     }
 
-    public void setSuitableForMoreAnimals(int suitableForMoreAnimals) {
+    public void setSuitableForMoreAnimals(boolean suitableForMoreAnimals) {
         this.suitableForMoreAnimals = suitableForMoreAnimals;
     }
 

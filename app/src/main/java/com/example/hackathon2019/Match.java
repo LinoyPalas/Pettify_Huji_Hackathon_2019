@@ -8,7 +8,7 @@ public class Match {
     public boolean allergyMatch()
     {
         //return true if not allergic or not allergic to this animal.
-        return !(user.questionnaire.allergies && user.questionnaire.allergiesKind == animal.animalType);
+        return !(user.questionnaire.allergies && user.questionnaire.allergiesKind.equals(animal.animalType));
     }
 
     public boolean otherAnimalsMatch()
@@ -20,41 +20,44 @@ public class Match {
     public double residenceMatch() {
         if (animal.animalType.equals("dog") || animal.animalType.equals("cat")) {
             //0 - garden, 1- first_floor, 2-high_floor
-            if (user.house == 0 || animal.suitableForApartment == 0) {
+            if (user.questionnaire.residence == 0 || animal.suitableForApartment == 0) {
                 return 40;
             } else {
                 if (animal.suitableForApartment == 2) {
                     return 0;
                 } else {
                     if (animal.animalType.equals("cat")) {
-                        if (user.house == 1) {
-                            helpResidenceMatch(0, 0);
+                        if (user.questionnaire.residence == 1) {
+                            return helpResidenceMatch(0, 0);
                         } else {
-                            helpResidenceMatch(0, 5);
+                            return helpResidenceMatch(0, 5);
                         }
                     } else {
-                        if (user.house == 1) {
-                            helpResidenceMatch(5, 0);
+                        if (user.questionnaire.residence == 1) {
+                            return helpResidenceMatch(5, 0);
                         } else {
-                            helpResidenceMatch(5, 5);
+                            return helpResidenceMatch(5, 5);
                         }
                     }
                 }
             }
+        } else {
+            return 40;
+        }
     }
 
 
-    private double helpResidenceMatch(int factor, int floor) {
-        if (user.workStatuse == 0) {
+    private double helpResidenceMatch(int factor,int floor) {
+        if (user.questionnaire.workStatus == 0) {
             return 35 - factor - floor;
-        } else if (user.workStatuse == 1) {
-            if (user.animalFriendly) {
+        } else if (user.questionnaire.workStatus == 1) {
+            if (user.questionnaire.animalFriendly) {
                 return 35 - factor - floor;
             } else {
                 return 25 - factor - floor;
             }
         } else {
-            if (user.animalFriendly) {
+            if (user.questionnaire.animalFriendly) {
                 return 25 - factor - floor;
             } else {
                 return 15 - factor - floor;
