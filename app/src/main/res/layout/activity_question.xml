@@ -79,14 +79,14 @@
                     android:id="@+id/privateHome"
                     android:background="@drawable/private_home"
                     android:layout_width="130dp"
-                    android:layout_height="130dp"
+                    android:layout_height="150dp"
                     android:onClick="privateHome" />
 
                 <ImageButton
                     android:id="@+id/apartment"
                     android:background="@drawable/apartment"
                     android:layout_width="130dp"
-                    android:layout_height="130dp"
+                    android:layout_height="150dp"
                     android:onClick="apartment" />
 
             </LinearLayout>
@@ -94,30 +94,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="15dp"
-                android:layout_marginStart="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="30dp">
-
-                <ImageButton
-                    android:id="@+id/groundWithGarden"
-                    android:background="@drawable/ground_with_garden"
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:onClick="groundWithGarden" />
-
-                <ImageButton
-                    android:id="@+id/ground"
-                    android:background="@drawable/ground"
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:onClick="ground"/>
 
                 <ImageButton
                     android:id="@+id/aboveGround"
                     android:background="@drawable/above_ground"
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
+                    android:layout_width="130dp"
+                    android:layout_height="78dp"
                     android:onClick="aboveGround"/>
+
+                <ImageButton
+                    android:id="@+id/ground"
+                    android:background="@drawable/ground"
+                    android:layout_width="130dp"
+                    android:layout_height="78dp"
+                    android:onClick="ground"/>
+
+                <ImageButton
+                    android:id="@+id/groundWithGarden"
+                    android:background="@drawable/ground_with_garden"
+                    android:layout_width="130dp"
+                    android:layout_height="78dp"
+                    android:onClick="groundWithGarden" />
 
             </LinearLayout>
         </LinearLayout>
@@ -242,44 +242,7 @@
             </LinearLayout>
         </LinearLayout>
 
-
         <!--- Category 3 question 1 -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="60dp">
-
-            <ImageButton
-                android:id="@+id/full_time_job"
-                android:background="@drawable/full_time_job"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:onClick="pickFullTimeJob" />
-
-            <ImageButton
-                android:id="@+id/part_time_job"
-                android:background="@drawable/part_time_job"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:onClick="pickHalfTimeJob" />
-
-            <ImageButton
-                android:id="@+id/unemployed"
-                android:background="@drawable/unemployed"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:onClick="pickunemployed" />
-
-        </LinearLayout>
-        </LinearLayout>
-
-        <!--- Category 3 question 2 -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -292,18 +255,52 @@
                 android:layout_marginTop="60dp">
 
                 <ImageButton
-                    android:id="@+id/animal_friendly"
-                    android:background="@drawable/animal_friendly"
+                    android:id="@+id/full_time_job"
+                    android:background="@drawable/full_time_job"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+                    android:onClick="pickFullTimeJob" />
+
+                <ImageButton
+                    android:id="@+id/part_time_job"
+                    android:background="@drawable/part_time_job"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:onClick="pickHalfTimeJob" />
+
+                <ImageButton
+                    android:id="@+id/unemployed"
+                    android:background="@drawable/unemployed"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:onClick="pickunemployed" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp">
+
+                <ImageButton
+                    android:id="@+id/animal_friendly"
+                    android:background="@drawable/friendly"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="20dp"
                     android:onClick="pickAnimalFriendly" />
 
                 <ImageButton
-                    android:id="@+id/unanimal_friendly"
-                    android:background="@drawable/unanimal_friendly"
+                    android:id="@+id/unfriendly"
+                    android:background="@drawable/unfriendly"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
-                    android:onClick="pickUnAnimalFriendly" />
+                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:onClick="unFriendly" />
 
             </LinearLayout>
         </LinearLayout>
