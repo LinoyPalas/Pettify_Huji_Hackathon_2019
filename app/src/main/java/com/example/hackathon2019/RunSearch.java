@@ -1,5 +1,8 @@
 package com.example.hackathon2019;
 
+import android.annotation.TargetApi;
+import android.os.Build;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -9,16 +12,16 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 
-class UniquePair implements Comparable<UniquePair>{
+class UniquePair implements Comparable<UniquePair> {
     public Integer score;
     public Animal animal;
 
-    UniquePair(int score, Animal animal){
+    UniquePair(int score, Animal animal) {
         this.score = score;
         this.animal = animal;
     }
 
-    public int compareTo(UniquePair other){
+    public int compareTo(UniquePair other) {
         return this.score.compareTo(other.score);
     }
 }
@@ -29,17 +32,19 @@ public class RunSearch {
     Match matcher;
     float[] scores;
     ArrayList<UniquePair> bestMatch;
-    
+    String jsonFile = "C:\\Users\\Omer Liberman\\Desktop\\Hackathon2019\\app\\src\\main\\java\\com\\example\\hackathon2019\\animals.json";
+
 
     RunSearch(User user) {
         this.user = user;
     }
 
-    public void readFromJsonFile(String fileName) {
+    @TargetApi(Build.VERSION_CODES.O)  // omer added this !!!
+    public void readFromJsonFile() {
         ArrayList<Animal> result = new ArrayList<Animal>();
 
         try {
-            String text = new String(Files.readAllBytes(Paths.get(fileName)), StandardCharsets.UTF_8);
+            String text = new String(Files.readAllBytes(Paths.get(jsonFile)), StandardCharsets.UTF_8);
 
             JSONObject obj = new JSONObject(text);
             JSONArray arr = obj.getJSONArray("com/example/hackathon2019/animals.json");
@@ -68,11 +73,12 @@ public class RunSearch {
     }
 
 
-    public void runMatching(){
+    public void runMatching() {
+        readFromJsonFile();
         int numOfAnimalsInDatabase = this.allAnimals.size();
         ArrayList<UniquePair> results = new ArrayList<>();
 
-        for (int i = 0; i < numOfAnimalsInDatabase; i++){
+        for (int i = 0; i < numOfAnimalsInDatabase; i++) {
             Match matcher = new Match(this.allAnimals.get(i), this.user);
             results.add(new UniquePair(matcher.getMatch(), this.allAnimals.get(i)));
         }
@@ -80,5 +86,5 @@ public class RunSearch {
 
         this.bestMatch = new ArrayList<UniquePair>(results.subList(0, 6));
     }
-    
+
 }
