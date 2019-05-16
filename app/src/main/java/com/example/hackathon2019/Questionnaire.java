@@ -5,7 +5,7 @@ public class Questionnaire {
     String name;
     String mail;
     int age;
-    String familyStatus; // Single\Married\With children
+    int familyStatus; // Single\Married\With children
 
 //  living
      int residence;
@@ -30,7 +30,7 @@ public class Questionnaire {
         this.age = age;
     }
 
-    public void setFamilyStatus(String familyStatus) {
+    public void setFamilyStatus(int familyStatus) {
         this.familyStatus = familyStatus;
     }
 
@@ -45,7 +45,7 @@ public class Questionnaire {
     public void setAnotherAnimal(boolean anotherAnimal) {
         this.anotherAnimal = anotherAnimal;
     }
-    
+
     public void setAllergies(boolean allergies) {
         this.allergies = allergies;
     }
