@@ -17,7 +17,7 @@
         android:textSize="36sp" />
 
     <TextView
-        android:id="@+id/locationQuestionTextView"
+        android:id="@+id/questionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -30,10 +30,73 @@
         android:id="@+id/signup_flipper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/locationQuestionTextView">
+        android:layout_below="@id/questionTextView">
 
         <!--- Questions Layouts -->
 
+        <!--- second question -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp">
+
+                <ImageButton
+                    android:id="@+id/privateHome"
+                    android:background="@drawable/next"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:onClick="nextView"
+                    android:text="@string/continue_btn" />
+
+                <ImageButton
+                    android:id="@+id/apartment"
+                    android:background="@drawable/next"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:onClick="nextView"
+                    android:text="@string/continue_btn" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30">
+
+                <ImageButton
+                    android:id="@+id/groundWithGarden"
+                    android:background="@drawable/next"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:onClick="nextView"
+                    android:text="@string/continue_btn" />
+
+                <ImageButton
+                    android:id="@+id/ground"
+                    android:background="@drawable/next"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:onClick="nextView"
+                    android:text="@string/continue_btn" />
+
+                <ImageButton
+                    android:id="@+id/aboveGround"
+                    android:background="@drawable/next"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:onClick="nextView"
+                    android:text="@string/continue_btn" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--- first question -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,31 +105,25 @@
 
             <ImageButton
                 android:id="@+id/northBtn"
-                android:layout_width="200dip"
+                android:layout_width="230dip"
                 android:layout_height="100dip"
                 android:background="@drawable/map_01"
                 android:onClick="pickNorth" />
 
             <ImageButton
                 android:id="@+id/centerBtn"
-                android:layout_width="200dip"
+                android:layout_width="230dip"
                 android:layout_height="100dip"
                 android:background="@drawable/map_02"
                 android:onClick="pickCenter" />
 
             <ImageButton
                 android:id="@+id/southBtn"
-                android:layout_width="200dip"
+                android:layout_width="230dip"
                 android:layout_height="200dip"
                 android:background="@drawable/map_03"
                 android:onClick="pickSouth" />
         </LinearLayout>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="first" />
 
         <Button
             android:layout_width="wrap_content"
@@ -85,10 +142,11 @@
 
     </ViewFlipper>
 
-    <Button
+    <ImageButton
         android:id="@+id/nextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="@drawable/next"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
@@ -102,10 +160,11 @@
         android:onClick="nextView"
         android:text="@string/continue_btn" />
 
-    <Button
+    <ImageButton
         android:id="@+id/prevButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="@drawable/prev"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
