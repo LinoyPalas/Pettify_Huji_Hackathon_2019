@@ -6,7 +6,13 @@ public class Match {
     Animal animal;
     User user;
 
+    Match(Animal animal, User user){
+        this.animal = animal;
+        this.user = user;
+    }
+
     public int getMatch(){
+        // returns a percentage of match
         int match = 0;
         if (allergyMatch() && otherAnimalsMatch()){
             match += residenceMatch() + treatmentMatch() + areaMatch() + friendlyMatch();
