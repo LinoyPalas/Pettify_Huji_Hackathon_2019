@@ -1,5 +1,6 @@
 package com.example.hackathon2019;
 
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
@@ -355,7 +356,8 @@ public class QuestionActivity extends AppCompatActivity {
         signupFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
         if (questionCount == numberOfQuestions[currentCategory] && currentCategory == 3) {
             nextButton.setVisibility(View.GONE);
-            //TODO move to the loading screen
+            Intent startIntent = new Intent(getApplicationContext(), CalculatingActivity.class);
+            startActivity(startIntent);
         }
         else{
             signupFlipper.showNext();
