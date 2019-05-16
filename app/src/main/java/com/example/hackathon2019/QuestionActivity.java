@@ -18,11 +18,13 @@ public class QuestionActivity extends AppCompatActivity {
     public ImageButton prevButton, nextButton, northButton, centerButton, southButton;
     public ImageButton privateHome,apartment, ground, groundWithGarden, aboveGround;
     public ImageButton friendly, unfriendly;
+    public ImageButton dog, cat, fish, lizard, rabbit, bird;
+    public ImageButton single, roommates, married, marriedPlus;
 
     public int questionCount = 0;
     public final int[] numberOfQuestions = {3, 1, 1, 1};
     public final String[] categoryTitles = {"מגורים", "אישי", "עבודה", "בריאותי"};
-    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי"}, {"אנימל פרנדלי"}, {"אלרגיות?", "נכות?"}};
+    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי"}, {"מקום עבודה"}, {"אלרגיות?", "נכות?"}};
 
     public int currentCategory = 0;  // 0 = first category
 
@@ -41,6 +43,18 @@ public class QuestionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_question);
 
         signupFlipper = findViewById(R.id.signup_flipper);
+
+        dog = findViewById(R.id.dog);
+        cat = findViewById(R.id.cat);
+        fish = findViewById(R.id.fish);
+        bird = findViewById(R.id.bird);
+        lizard = findViewById(R.id.lizard);
+        rabbit = findViewById(R.id.rabbit);
+
+        single = findViewById(R.id.single);
+        roommates = findViewById(R.id.roommates);
+        married = findViewById(R.id.married);
+        marriedPlus = findViewById(R.id.marriedPlus);
 
         prevButton = findViewById(R.id.prevButton);
         nextButton = findViewById(R.id.nextButton);
@@ -73,45 +87,67 @@ public class QuestionActivity extends AppCompatActivity {
     public void single(View v) {
         personalStatus = 0;
         nextButton.setVisibility(View.VISIBLE);
+        single.setBackground(getResources().getDrawable(R.drawable.single_sel));
+        roommates.setBackground(getResources().getDrawable(R.drawable.roommates));
+        married.setBackground(getResources().getDrawable(R.drawable.married));
+        marriedPlus.setBackground(getResources().getDrawable(R.drawable.married_plus));
     }
 
     public void roommates(View v) {
         personalStatus = 1;
         nextButton.setVisibility(View.VISIBLE);
+        single.setBackground(getResources().getDrawable(R.drawable.single));
+        roommates.setBackground(getResources().getDrawable(R.drawable.roommates_sel));
+        married.setBackground(getResources().getDrawable(R.drawable.married));
+        marriedPlus.setBackground(getResources().getDrawable(R.drawable.married_plus));
     }
 
     public void married(View v) {
         personalStatus = 2;
         nextButton.setVisibility(View.VISIBLE);
+        single.setBackground(getResources().getDrawable(R.drawable.single));
+        roommates.setBackground(getResources().getDrawable(R.drawable.roommates));
+        married.setBackground(getResources().getDrawable(R.drawable.married_sel));
+        marriedPlus.setBackground(getResources().getDrawable(R.drawable.married_plus));
     }
 
     public void marriedPlus(View v) {
         personalStatus = 3;
         nextButton.setVisibility(View.VISIBLE);
+        single.setBackground(getResources().getDrawable(R.drawable.single));
+        roommates.setBackground(getResources().getDrawable(R.drawable.roommates));
+        married.setBackground(getResources().getDrawable(R.drawable.married));
+        marriedPlus.setBackground(getResources().getDrawable(R.drawable.married_plus_sel));
     }
 
     public void dog(View v) {
         extraAnimals += "dog, ";
+        dog.setBackground(getResources().getDrawable(R.drawable.dog_sel));
     }
 
     public void cat(View v) {
         extraAnimals += "cat, ";
+        cat.setBackground(getResources().getDrawable(R.drawable.cat_sel));
     }
 
     public void fish(View v) {
         extraAnimals += "fish, ";
+        fish.setBackground(getResources().getDrawable(R.drawable.fish_sel));
     }
 
     public void lizard(View v) {
         extraAnimals += "lizard, ";
+        lizard.setBackground(getResources().getDrawable(R.drawable.lizard));
     }
 
     public void bird(View v) {
         extraAnimals += "bird, ";
+        bird.setBackground(getResources().getDrawable(R.drawable.bird_sel));
     }
 
     public void rabbit(View v) {
         extraAnimals += "rabbit, ";
+        rabbit.setBackground(getResources().getDrawable(R.drawable.rabbit_sel));
     }
 
     public void setTitles() {
@@ -148,7 +184,7 @@ public class QuestionActivity extends AppCompatActivity {
         livingArrangement = 0;
         nextButton.setVisibility(View.VISIBLE);
         privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
-        apartment.setBackground(getResources().getDrawable(R.drawable.apartment));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment_sel));
         ground.setBackground(getResources().getDrawable(R.drawable.ground));
         aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground));
         groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden_sel));
@@ -158,7 +194,7 @@ public class QuestionActivity extends AppCompatActivity {
         livingArrangement = 1;
         nextButton.setVisibility(View.VISIBLE);
         privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
-        apartment.setBackground(getResources().getDrawable(R.drawable.apartment));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment_sel));
         ground.setBackground(getResources().getDrawable(R.drawable.ground_sel));
         aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground));
         groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden));
@@ -168,7 +204,7 @@ public class QuestionActivity extends AppCompatActivity {
         livingArrangement = 2;
         nextButton.setVisibility(View.VISIBLE);
         privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
-        apartment.setBackground(getResources().getDrawable(R.drawable.apartment));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment_sel));
         ground.setBackground(getResources().getDrawable(R.drawable.ground));
         aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground_sel));
         groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden));
