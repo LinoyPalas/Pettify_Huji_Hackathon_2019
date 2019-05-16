@@ -36,8 +36,9 @@ public class QuestionActivity extends AppCompatActivity {
     public int livingArrangement;
     public boolean extraAnimals = false;
     public int personalStatus;
+    public boolean animalFriendly;
 
-    public String job;
+    public int job;
 
     public boolean allergic;
 
@@ -247,7 +248,7 @@ public class QuestionActivity extends AppCompatActivity {
 
 
     public void pickFullTimeJob(View v){
-        job = "full time";
+        job = 2;
         fullOrPart = true;
         nextButton.setVisibility(View.GONE);
         friendly.setVisibility(View.VISIBLE);
@@ -260,7 +261,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void pickHalfTimeJob(View v){
-        job = "half time";
+        job = 1;
         fullOrPart = false;
         nextButton.setVisibility(View.GONE);
         friendly.setVisibility(View.VISIBLE);
@@ -273,7 +274,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void pickunemployed(View v){
-        job = "unemployed";
+        job = 0;
         nextButton.setVisibility(View.VISIBLE);
         friendly.setVisibility(View.GONE);
         unfriendly.setVisibility(View.GONE);
@@ -285,7 +286,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void pickAnimalFriendly(View v){
-        job = "unemployed";
+        animalFriendly = true;
         nextButton.setVisibility(View.VISIBLE);
         if (fullOrPart) {
             fullTimeJob.setBackground(getResources().getDrawable(R.drawable.full_time_job_sel));
@@ -300,7 +301,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void unFriendly(View v){
-        job = "unemployed";
+        animalFriendly = false;
         nextButton.setVisibility(View.VISIBLE);
         if (fullOrPart) {
             fullTimeJob.setBackground(getResources().getDrawable(R.drawable.full_time_job_sel));
@@ -376,5 +377,5 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     Questionnaire curQS = new Questionnaire(personalStatus, livingArrangement, location, extraAnimals,
-            allergic, )
+            allergic, job, animalFriendly);
 }
