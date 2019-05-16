@@ -26,56 +26,40 @@ public class Match {
                 if (animal.suitableForApartment == 2) {
                     return 0;
                 } else {
-                    //cat
-                    if (animal.animalType == "cat") {
-                        if (user.house == 1) { //first floor
-                            if (user.work == 0) {
-                                return 35;
-                            } else if (user.work == 1) {
-                                return 25;
-                            } else {
-                                return 15;
-                            }
-                        } else { //high floor
-                            if (user.work == 0) {
-                                return 30;
-                            } else if (user.work == 1) {
-                                return 20;
-                            } else {
-                                return 10;
-                            }
+                    if (animal.animalType.equals("cat")) {
+                        if (user.house == 1) {
+                            helpResidenceMatch(0, 0);
+                        } else {
+                            helpResidenceMatch(0, 5);
                         }
-                    }
-
-                    //dog
-                    else {
-                        if (user.house == 1) { //first floor
-                            if (user.work == 0) {
-                                return 30;
-                            } else if (user.work == 1) {
-                                return 20;
-                            } else {
-                                return 10;
-                            }
-                        } else { //high floor
-                            if (user.work == 0) {
-                                return 25;
-                            } else if (user.work == 1) {
-                                return 15;
-                            } else {
-                                return 5;
-                            }
+                    } else {
+                        if (user.house == 1) {
+                            helpResidenceMatch(5, 0);
+                        } else {
+                            helpResidenceMatch(5, 5);
                         }
                     }
                 }
             }
-
-        } else {
-            return 40;
-        }
     }
 
-    
 
+    private double helpResidenceMatch(int factor, int floor) {
+        if (user.workStatuse == 0) {
+            return 35 - factor - floor;
+        } else if (user.workStatuse == 1) {
+            if (user.animalFriendly) {
+                return 35 - factor - floor;
+            } else {
+                return 25 - factor - floor;
+            }
+        } else {
+            if (user.animalFriendly) {
+                return 25 - factor - floor;
+            } else {
+                return 15 - factor - floor;
+            }
+        }
+    }
 
 }
