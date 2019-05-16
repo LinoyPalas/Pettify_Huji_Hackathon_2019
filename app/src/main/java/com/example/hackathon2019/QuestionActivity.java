@@ -15,8 +15,6 @@ public class QuestionActivity extends AppCompatActivity {
     public ViewFlipper signupFlipper;
     public TextView title, question;
 
-    public int reset = 0;
-
     public ImageButton prevButton, nextButton, northButton, centerButton, southButton;
     public ImageButton privateHome,apartment, ground, groundWithGarden, aboveGround;
     public ImageButton friendly, unfriendly;
@@ -29,7 +27,7 @@ public class QuestionActivity extends AppCompatActivity {
     public int currentCategory = 0;  // 0 = first category
 
     public String location;
-    public String[] livingArrangement = new String[2];
+    public int livingArrangement;
     public String extraAnimals = "";
     public int personalStatus;
 
@@ -122,8 +120,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void privateHome(View v) {
-        livingArrangement[0] = "Home";
-        livingArrangement[1] = null;
+        livingArrangement = 0;
         nextButton.setVisibility(View.VISIBLE);
         ground.setVisibility(View.GONE);
         groundWithGarden.setVisibility(View.GONE);
@@ -136,7 +133,6 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void apartment(View v) {
-        livingArrangement[0] = "Apartment";
         ground.setVisibility(View.VISIBLE);
         groundWithGarden.setVisibility(View.VISIBLE);
         aboveGround.setVisibility(View.VISIBLE);
@@ -149,7 +145,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void groundWithGarden(View v) {
-        livingArrangement[1] = "withGarden";
+        livingArrangement = 0;
         nextButton.setVisibility(View.VISIBLE);
         privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
         apartment.setBackground(getResources().getDrawable(R.drawable.apartment));
@@ -159,7 +155,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void ground(View v) {
-        livingArrangement[1] = "ground";
+        livingArrangement = 1;
         nextButton.setVisibility(View.VISIBLE);
         privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
         apartment.setBackground(getResources().getDrawable(R.drawable.apartment));
@@ -169,7 +165,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void aboveGround(View v) {
-        livingArrangement[1] = "aboveGround";
+        livingArrangement = 2;
         nextButton.setVisibility(View.VISIBLE);
         privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
         apartment.setBackground(getResources().getDrawable(R.drawable.apartment));
