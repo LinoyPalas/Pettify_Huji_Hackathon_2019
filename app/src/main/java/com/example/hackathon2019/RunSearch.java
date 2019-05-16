@@ -5,10 +5,29 @@ import android.util.Pair;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.lang.reflect.Array;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+class UniqePair implements Comparable<UniqePair>{
+    public Integer score;
+    public Animal animal;
+
+    UniqePair(int score, Animal animal){
+        this.score = score;
+        this.animal = animal;
+    }
+
+    public int compareTo(UniqePair other){
+        return this.score.compareTo(other.score);
+    }
+}
 
 public class RunSearch {
     User user;
@@ -39,7 +58,7 @@ public class RunSearch {
                 String imageLink = arr.getJSONObject(i).getString("image_link");
 
                 result.add(new Animal(type, area, imageLink, "", suitableForApartment,
-                        friendly, treatment, suitableForMoreAnimals);
+                        friendly, treatment, suitableForMoreAnimals));
             }
         } catch (Exception ex) {
             System.out.println(ex.toString());
@@ -50,17 +69,13 @@ public class RunSearch {
 
     public void runMatching(){
         int numOfAnimalsInDatabase = this.allAnimals.size();
-        ArrayList<Pair<Integer, Animal>> results = new ArrayList<>();
+        ArrayList<UniqePair> results = new ArrayList<>();
 
         for (int i = 0; i < numOfAnimalsInDatabase; i++){
             Match matcher = new Match(this.allAnimals.get(i), this.user);
-            results.add(new Pair<Integer, Animal>(matcher.getMatch(), this.allAnimals.get(i)));
+            results.add(new UniqePair(matcher.getMatch(), this.allAnimals.get(i)));
         }
-
-
-
-
-
+        Collections.reverse(results);
 
 
 
