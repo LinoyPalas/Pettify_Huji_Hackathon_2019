@@ -38,6 +38,7 @@ public class QuestionActivity extends AppCompatActivity {
 
     public void pickNorth(View v) {
         location = "North";
+        northButton.setBackground(R.drawable.map_01_sel);
     }
 
     public void pickCenter(View v) {
