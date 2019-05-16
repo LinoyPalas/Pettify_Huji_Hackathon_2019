@@ -21,9 +21,9 @@ public class QuestionActivity extends AppCompatActivity {
     public ImageButton privateHome,apartment, ground, groundWithGarden, aboveGround;
 
     public int questionCount = 0;
-    public final int[] numberOfQuestions = {3, 3, 3, 2};
+    public final int[] numberOfQuestions = {3, 2, 3, 2};
     public final String[] categoryTitles = {"מגורים", "אישי", "עבודה", "בריאותי"};
-    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי"}};
+    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי", "מספר נפשות בבית"}};
 
     public int currentCategory = 0;  // 0 = first category
 
@@ -62,32 +62,26 @@ public class QuestionActivity extends AppCompatActivity {
 
     public void dog(View v) {
         extraAnimals += "dog, ";
-        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void cat(View v) {
         extraAnimals += "cat, ";
-        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void fish(View v) {
         extraAnimals += "fish, ";
-        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void lizard(View v) {
         extraAnimals += "lizard, ";
-        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void bird(View v) {
         extraAnimals += "bird, ";
-        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void rabbit(View v) {
         extraAnimals += "rabbit, ";
-        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void setTitles() {
