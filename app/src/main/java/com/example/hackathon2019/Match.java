@@ -80,9 +80,9 @@ public class Match {
             return 30;
         } else {
             int workStatuse= 0, animalFriendly =0, familyStatus=0;
-            if (user.questionnaire.status == 0){
+            if (user.questionnaire.familyStatus == 0){
                 familyStatus = 7;
-            } else if (user.questionnaire.status == 1 || user.questionnaire.status == 2){
+            } else if (user.questionnaire.familyStatus == 1 || user.questionnaire.familyStatus == 2){
                 familyStatus = 5;
             }
 
@@ -113,15 +113,15 @@ public class Match {
     private int friendlyMatch(){
         int count = 0;
         if(!animal.friendly){
-            if (user.questionnaire.status == 0){
+            if (user.questionnaire.familyStatus == 0){
                 count =  20;
             } else {
                 count = 15;
             }
         } else {
-            if(user.questionnaire.status == 3){
+            if(user.questionnaire.familyStatus == 3){
                 count = 20;
-            } else if (user.questionnaire.status == 2 || user.questionnaire.status == 1){
+            } else if (user.questionnaire.familyStatus == 2 || user.questionnaire.familyStatus == 1){
                 count = 17;
             } else {
                 count = 15;
@@ -135,7 +135,7 @@ public class Match {
 
     private int areaMatch()
     {
-        if(animal.area == user.questionnaire.area){
+        if(animal.area.equals(user.questionnaire.area)){
             return 5;
         } return 0;
     }
