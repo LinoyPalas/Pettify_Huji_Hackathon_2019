@@ -1,6 +1,7 @@
 package com.example.hackathon2019;
 
 import android.graphics.PorterDuff;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -47,6 +48,12 @@ public class QuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
 
+        title = findViewById(R.id.titleTextView);
+        question = findViewById(R.id.questionTextView);
+        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/OS Aran_W_500FFC.ttf");
+        title.setTypeface(custom_font);
+        question.setTypeface(custom_font);
+
         signupFlipper = findViewById(R.id.signup_flipper);
 
         isAllergic = findViewById(R.id.allergic);
@@ -89,8 +96,6 @@ public class QuestionActivity extends AppCompatActivity {
         unfriendly = findViewById(R.id.unfriendly);
         friendly.setVisibility(View.GONE);
         unfriendly.setVisibility(View.GONE);
-        title = findViewById(R.id.titleTextView);
-        question = findViewById(R.id.questionTextView);
 
         setTitles();
 
