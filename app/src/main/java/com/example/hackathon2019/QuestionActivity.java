@@ -39,17 +39,22 @@ public class QuestionActivity extends AppCompatActivity {
         if (questionCount <= 1) {
             prevButton.setClickable(false);
         }
-        else {
-            prevButton.setClickable(true);
-        }
         boolean flag;
         switch (currentCategory) {
-            case 0: case 1: case 3:
-                flag = (questionCount < 3);
+            case 0:
+                flag = (questionCount < numberOfQuestions[0]);
+                nextButton.setClickable(flag);
+                break;
+            case 1:
+                flag = (questionCount < numberOfQuestions[1]);
                 nextButton.setClickable(flag);
                 break;
             case 2:
-                flag = (questionCount < 2);
+                flag = (questionCount < numberOfQuestions[2]);
+                nextButton.setClickable(flag);
+                break;
+            case 3:
+                flag = (questionCount < numberOfQuestions[3]);
                 nextButton.setClickable(flag);
                 break;
             default:
@@ -62,20 +67,25 @@ public class QuestionActivity extends AppCompatActivity {
         signupFlipper.setInAnimation(this, android.R.anim.slide_in_left);
         signupFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
         signupFlipper.showNext();
-        if (questionCount <= 1) {
-            prevButton.setClickable(false);
-        }
-        else {
+        if (questionCount > 1) {
             prevButton.setClickable(true);
         }
         boolean flag;
         switch (currentCategory) {
-            case 0: case 1: case 3:
-                flag = (questionCount < 2);
+            case 0:
+                flag = (questionCount < numberOfQuestions[0]);
+                nextButton.setClickable(flag);
+                break;
+            case 1:
+                flag = (questionCount < numberOfQuestions[1]);
                 nextButton.setClickable(flag);
                 break;
             case 2:
-                flag = (questionCount < 1);
+                flag = (questionCount < numberOfQuestions[2]);
+                nextButton.setClickable(flag);
+                break;
+            case 3:
+                flag = (questionCount < numberOfQuestions[3]);
                 nextButton.setClickable(flag);
                 break;
             default:
