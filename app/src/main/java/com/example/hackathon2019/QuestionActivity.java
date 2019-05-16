@@ -23,13 +23,15 @@ public class QuestionActivity extends AppCompatActivity {
     public int questionCount = 0;
     public final int[] numberOfQuestions = {3, 2, 3, 2};
     public final String[] categoryTitles = {"מגורים", "אישי", "עבודה", "בריאותי"};
-    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי", "מספר נפשות בבית"}};
+    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי", "מספר נפשות בבית"}, {"היקף משרה"}, {"אנימל פרנדלי"}};
 
     public int currentCategory = 0;  // 0 = first category
 
     public String location;
     public String[] livingArrangement = new String[2];
     public String extraAnimals = "";
+
+    public String job;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -143,6 +145,32 @@ public class QuestionActivity extends AppCompatActivity {
         northButton.setBackground(getResources().getDrawable(R.drawable.map_01));
         centerButton.setBackground(getResources().getDrawable(R.drawable.map_02));
         southButton.setBackground(getResources().getDrawable(R.drawable.map_03_sel));
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+
+    public void pickFullTimeJob(View v){
+        job = "full time";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void pickHalfTimeJob(View v){
+        job = "half time";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void pickunemployed(View v){
+        job = "unemployed";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void pickAnimalFriendly(View v){
+        job = "unemployed";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void pickUnAnimalFriendly(View v){
+        job = "unemployed";
         nextButton.setVisibility(View.VISIBLE);
     }
 

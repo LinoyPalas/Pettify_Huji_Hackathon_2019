@@ -12,7 +12,8 @@ public class Animal {
     int treatment;
     boolean suitableForMoreAnimals;
 
-    public Animal(String animalType, String area, String imageLink, String description, int suitableForApartment,
+    public Animal(String animalType
+            , String area, String imageLink, String description, int suitableForApartment,
                   boolean friendly, int treatment, boolean suitableForMoreAnimals){
         this.animalType = animalType;
         this.area = area;
