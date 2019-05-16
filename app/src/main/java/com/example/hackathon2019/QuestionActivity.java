@@ -1,6 +1,8 @@
 package com.example.hackathon2019;
 
+import android.content.Intent;
 import android.graphics.PorterDuff;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -15,25 +17,30 @@ public class QuestionActivity extends AppCompatActivity {
     public ViewFlipper signupFlipper;
     public TextView title, question;
 
-    public int reset = 0;
+    public boolean fullOrPart;
 
     public ImageButton prevButton, nextButton, northButton, centerButton, southButton;
     public ImageButton privateHome,apartment, ground, groundWithGarden, aboveGround;
     public ImageButton friendly, unfriendly;
+    public ImageButton dog, cat, fish, lizard, rabbit, bird;
+    public ImageButton single, roommates, married, marriedPlus;
+    public ImageButton fullTimeJob, partTimeJob, unemployed;
+    public ImageButton isAllergic, notAllergic;
 
     public int questionCount = 0;
-    public final int[] numberOfQuestions = {3, 1, 1, 2};
+    public final int[] numberOfQuestions = {3, 1, 1, 1};
     public final String[] categoryTitles = {"מגורים", "אישי", "עבודה", "בריאותי"};
-    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי"}, {"אנימל פרנדלי"}, {"אלרגיות?", "נכות?"}};
+    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי"}, {"מקום עבודה"}, {"אלרגיות?", "נכות?"}};
 
     public int currentCategory = 0;  // 0 = first category
 
     public String location;
-    public String[] livingArrangement = new String[2];
-    public String extraAnimals = "";
-    public String personalStatus;
+    public int livingArrangement;
+    public boolean extraAnimals = false;
+    public int personalStatus;
+    public boolean animalFriendly;
 
-    public String job;
+    public int job;
 
     public boolean allergic;
 
@@ -42,7 +49,29 @@ public class QuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
 
+        title = findViewById(R.id.titleTextView);
+        question = findViewById(R.id.questionTextView);
+
         signupFlipper = findViewById(R.id.signup_flipper);
+
+        isAllergic = findViewById(R.id.allergic);
+        notAllergic = findViewById(R.id.unallergic);
+
+        dog = findViewById(R.id.dog);
+        cat = findViewById(R.id.cat);
+        fish = findViewById(R.id.fish);
+        bird = findViewById(R.id.bird);
+        lizard = findViewById(R.id.lizard);
+        rabbit = findViewById(R.id.rabbit);
+
+        single = findViewById(R.id.single);
+        roommates = findViewById(R.id.roommates);
+        married = findViewById(R.id.married);
+        marriedPlus = findViewById(R.id.marriedPlus);
+
+        fullTimeJob = findViewById(R.id.full_time_job);
+        partTimeJob = findViewById(R.id.part_time_job);
+        unemployed = findViewById(R.id.unemployed);
 
         prevButton = findViewById(R.id.prevButton);
         nextButton = findViewById(R.id.nextButton);
@@ -65,55 +94,75 @@ public class QuestionActivity extends AppCompatActivity {
         unfriendly = findViewById(R.id.unfriendly);
         friendly.setVisibility(View.GONE);
         unfriendly.setVisibility(View.GONE);
-        title = findViewById(R.id.titleTextView);
-        question = findViewById(R.id.questionTextView);
 
         setTitles();
 
     }
 
     public void single(View v) {
-        personalStatus = "Single";
+        personalStatus = 0;
         nextButton.setVisibility(View.VISIBLE);
+        single.setBackground(getResources().getDrawable(R.drawable.single_sel));
+        roommates.setBackground(getResources().getDrawable(R.drawable.roommates));
+        married.setBackground(getResources().getDrawable(R.drawable.married));
+        marriedPlus.setBackground(getResources().getDrawable(R.drawable.married_plus));
     }
 
     public void roommates(View v) {
-        personalStatus = "Roomies";
+        personalStatus = 1;
         nextButton.setVisibility(View.VISIBLE);
+        single.setBackground(getResources().getDrawable(R.drawable.single));
+        roommates.setBackground(getResources().getDrawable(R.drawable.roommates_sel));
+        married.setBackground(getResources().getDrawable(R.drawable.married));
+        marriedPlus.setBackground(getResources().getDrawable(R.drawable.married_plus));
     }
 
     public void married(View v) {
-        personalStatus = "Married";
+        personalStatus = 2;
         nextButton.setVisibility(View.VISIBLE);
+        single.setBackground(getResources().getDrawable(R.drawable.single));
+        roommates.setBackground(getResources().getDrawable(R.drawable.roommates));
+        married.setBackground(getResources().getDrawable(R.drawable.married_sel));
+        marriedPlus.setBackground(getResources().getDrawable(R.drawable.married_plus));
     }
 
     public void marriedPlus(View v) {
-        personalStatus = "Married+";
+        personalStatus = 3;
         nextButton.setVisibility(View.VISIBLE);
+        single.setBackground(getResources().getDrawable(R.drawable.single));
+        roommates.setBackground(getResources().getDrawable(R.drawable.roommates));
+        married.setBackground(getResources().getDrawable(R.drawable.married));
+        marriedPlus.setBackground(getResources().getDrawable(R.drawable.married_plus_sel));
     }
 
     public void dog(View v) {
-        extraAnimals += "dog, ";
+        extraAnimals = true;
+        dog.setBackground(getResources().getDrawable(R.drawable.dog_sel));
     }
 
     public void cat(View v) {
-        extraAnimals += "cat, ";
+        extraAnimals = true;
+        cat.setBackground(getResources().getDrawable(R.drawable.cat_sel));
     }
 
     public void fish(View v) {
-        extraAnimals += "fish, ";
+        extraAnimals = true;
+        fish.setBackground(getResources().getDrawable(R.drawable.fish_sel));
     }
 
     public void lizard(View v) {
-        extraAnimals += "lizard, ";
+        extraAnimals = true;
+        lizard.setBackground(getResources().getDrawable(R.drawable.lizard_sel));
     }
 
     public void bird(View v) {
-        extraAnimals += "bird, ";
+        extraAnimals = true;
+        bird.setBackground(getResources().getDrawable(R.drawable.bird_sel));
     }
 
     public void rabbit(View v) {
-        extraAnimals += "rabbit, ";
+        extraAnimals = true;
+        rabbit.setBackground(getResources().getDrawable(R.drawable.rabbit_sel));
     }
 
     public void setTitles() {
@@ -122,35 +171,58 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void privateHome(View v) {
-        livingArrangement[0] = "Home";
-        livingArrangement[1] = null;
+        livingArrangement = 0;
         nextButton.setVisibility(View.VISIBLE);
         ground.setVisibility(View.GONE);
         groundWithGarden.setVisibility(View.GONE);
         aboveGround.setVisibility(View.GONE);
+        privateHome.setBackground(getResources().getDrawable(R.drawable.private_home_sel));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment));
+        ground.setBackground(getResources().getDrawable(R.drawable.ground));
+        aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground));
+        groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden));
     }
 
     public void apartment(View v) {
-        livingArrangement[0] = "Apartment";
         ground.setVisibility(View.VISIBLE);
         groundWithGarden.setVisibility(View.VISIBLE);
         aboveGround.setVisibility(View.VISIBLE);
         nextButton.setVisibility(View.GONE);
+        privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment_sel));
+        ground.setBackground(getResources().getDrawable(R.drawable.ground));
+        aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground));
+        groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden));
     }
 
     public void groundWithGarden(View v) {
-        livingArrangement[1] = "withGarden";
+        livingArrangement = 0;
         nextButton.setVisibility(View.VISIBLE);
+        privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment_sel));
+        ground.setBackground(getResources().getDrawable(R.drawable.ground));
+        aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground));
+        groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden_sel));
     }
 
     public void ground(View v) {
-        livingArrangement[1] = "ground";
+        livingArrangement = 1;
         nextButton.setVisibility(View.VISIBLE);
+        privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment_sel));
+        ground.setBackground(getResources().getDrawable(R.drawable.ground_sel));
+        aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground));
+        groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden));
     }
 
     public void aboveGround(View v) {
-        livingArrangement[1] = "aboveGround";
+        livingArrangement = 2;
         nextButton.setVisibility(View.VISIBLE);
+        privateHome.setBackground(getResources().getDrawable(R.drawable.private_home));
+        apartment.setBackground(getResources().getDrawable(R.drawable.apartment_sel));
+        ground.setBackground(getResources().getDrawable(R.drawable.ground));
+        aboveGround.setBackground(getResources().getDrawable(R.drawable.above_ground_sel));
+        groundWithGarden.setBackground(getResources().getDrawable(R.drawable.ground_with_garden));
     }
 
     public void pickNorth(View v) {
@@ -179,44 +251,85 @@ public class QuestionActivity extends AppCompatActivity {
 
 
     public void pickFullTimeJob(View v){
-        job = "full time";
+        job = 2;
+        fullOrPart = true;
         nextButton.setVisibility(View.GONE);
         friendly.setVisibility(View.VISIBLE);
         unfriendly.setVisibility(View.VISIBLE);
+        fullTimeJob.setBackground(getResources().getDrawable(R.drawable.full_time_job_sel));
+        partTimeJob.setBackground(getResources().getDrawable(R.drawable.part_time_job));
+        unemployed.setBackground(getResources().getDrawable(R.drawable.unemployed));
+        friendly.setBackground(getResources().getDrawable(R.drawable.friendly));
+        unfriendly.setBackground(getResources().getDrawable(R.drawable.unfriendly));
     }
 
     public void pickHalfTimeJob(View v){
-        job = "half time";
+        job = 1;
+        fullOrPart = false;
         nextButton.setVisibility(View.GONE);
         friendly.setVisibility(View.VISIBLE);
         unfriendly.setVisibility(View.VISIBLE);
+        fullTimeJob.setBackground(getResources().getDrawable(R.drawable.full_time_job));
+        partTimeJob.setBackground(getResources().getDrawable(R.drawable.part_time_job_sel));
+        unemployed.setBackground(getResources().getDrawable(R.drawable.unemployed));
+        friendly.setBackground(getResources().getDrawable(R.drawable.friendly));
+        unfriendly.setBackground(getResources().getDrawable(R.drawable.unfriendly));
     }
 
     public void pickunemployed(View v){
-        job = "unemployed";
+        job = 0;
         nextButton.setVisibility(View.VISIBLE);
         friendly.setVisibility(View.GONE);
         unfriendly.setVisibility(View.GONE);
+        fullTimeJob.setBackground(getResources().getDrawable(R.drawable.full_time_job));
+        partTimeJob.setBackground(getResources().getDrawable(R.drawable.part_time_job));
+        unemployed.setBackground(getResources().getDrawable(R.drawable.unemployed_sel));
+        friendly.setBackground(getResources().getDrawable(R.drawable.friendly));
+        unfriendly.setBackground(getResources().getDrawable(R.drawable.unfriendly));
     }
 
     public void pickAnimalFriendly(View v){
-        job = "unemployed";
+        animalFriendly = true;
         nextButton.setVisibility(View.VISIBLE);
+        if (fullOrPart) {
+            fullTimeJob.setBackground(getResources().getDrawable(R.drawable.full_time_job_sel));
+            partTimeJob.setBackground(getResources().getDrawable(R.drawable.part_time_job));
+        } else{
+            fullTimeJob.setBackground(getResources().getDrawable(R.drawable.full_time_job));
+            partTimeJob.setBackground(getResources().getDrawable(R.drawable.part_time_job_sel));
+        }
+        unemployed.setBackground(getResources().getDrawable(R.drawable.unemployed));
+        friendly.setBackground(getResources().getDrawable(R.drawable.friendly_sel));
+        unfriendly.setBackground(getResources().getDrawable(R.drawable.unfriendly));
     }
 
     public void unFriendly(View v){
-        job = "unemployed";
+        animalFriendly = false;
         nextButton.setVisibility(View.VISIBLE);
+        if (fullOrPart) {
+            fullTimeJob.setBackground(getResources().getDrawable(R.drawable.full_time_job_sel));
+            partTimeJob.setBackground(getResources().getDrawable(R.drawable.part_time_job));
+        } else{
+            fullTimeJob.setBackground(getResources().getDrawable(R.drawable.full_time_job));
+            partTimeJob.setBackground(getResources().getDrawable(R.drawable.part_time_job_sel));
+        }
+        unemployed.setBackground(getResources().getDrawable(R.drawable.unemployed));
+        friendly.setBackground(getResources().getDrawable(R.drawable.friendly));
+        unfriendly.setBackground(getResources().getDrawable(R.drawable.unfriendly_sel));
     }
 
     public void pickAllergic(View v){
         allergic = true;
-        nextButton.setVisibility(View.GONE);
+        nextButton.setVisibility(View.VISIBLE);
+        isAllergic.setBackground(getResources().getDrawable(R.drawable.allergic_sel));
+        notAllergic.setBackground(getResources().getDrawable(R.drawable.unallergic));
     }
 
     public void pickUnallergic(View v){
         allergic = false;
         nextButton.setVisibility(View.VISIBLE);
+        isAllergic.setBackground(getResources().getDrawable(R.drawable.allergic));
+        notAllergic.setBackground(getResources().getDrawable(R.drawable.unallergic_sel));
     }
 
     public void previousView(View v) {
@@ -241,23 +354,37 @@ public class QuestionActivity extends AppCompatActivity {
     public void nextView(View v) {
         signupFlipper.setInAnimation(this, android.R.anim.slide_in_left);
         signupFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
-        signupFlipper.showNext();
-
-        questionCount++;
-        if (questionCount > 0 || currentCategory > 0) {
-            prevButton.setVisibility(View.VISIBLE);
+        if (questionCount == numberOfQuestions[currentCategory] && currentCategory == 3) {
+            nextButton.setVisibility(View.GONE);
+            Intent startIntent = new Intent(getApplicationContext(), CalculatingActivity.class);
+            startActivity(startIntent);
         }
+        else{
+            signupFlipper.showNext();
 
-        nextButton.setVisibility(View.GONE);
-        if (questionCount == 2 && currentCategory == 0) {
-            nextButton.setVisibility(View.VISIBLE);
-        }
-        if (questionCount == numberOfQuestions[currentCategory]) {
-            questionCount = 0;
-            currentCategory++;
-        }
+            questionCount++;
+            if (questionCount > 0 || currentCategory > 0) {
+                prevButton.setVisibility(View.VISIBLE);
+            }
 
-        setTitles();
+            nextButton.setVisibility(View.GONE);
+            if (questionCount == 2 && currentCategory == 0) {
+                nextButton.setVisibility(View.VISIBLE);
+            }
+            if (questionCount == numberOfQuestions[currentCategory]) {
+                questionCount = 0;
+                currentCategory++;
+            }
+
+            setTitles();
+        }
     }
+
+    Questionnaire curQS = new Questionnaire(personalStatus, livingArrangement, location, extraAnimals,
+            allergic, job, animalFriendly);
+    User user = new User(curQS);
+    RunSearch runSearch = new RunSearch(user);
+
+
 
 }
