@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.example.hackathon2019"
-        minSdkVersion 16
+        minSdkVersion 26
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -30,7 +30,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.9'
     api 'com.google.firebase:firebase-database:17.0.0'
 
-    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
 
 }
 
