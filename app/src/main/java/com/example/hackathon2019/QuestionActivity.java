@@ -29,6 +29,7 @@ public class QuestionActivity extends AppCompatActivity {
 
     public String location;
     public String[] livingArrangement = new String[2];
+    public String extraAnimals = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,36 @@ public class QuestionActivity extends AppCompatActivity {
 
         setTitles();
 
+    }
+
+    public void dog(View v) {
+        extraAnimals += "dog, ";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void cat(View v) {
+        extraAnimals += "cat, ";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void fish(View v) {
+        extraAnimals += "fish, ";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void lizard(View v) {
+        extraAnimals += "lizard, ";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void bird(View v) {
+        extraAnimals += "bird, ";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void rabbit(View v) {
+        extraAnimals += "rabbit, ";
+        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void setTitles() {
@@ -127,38 +158,17 @@ public class QuestionActivity extends AppCompatActivity {
         signupFlipper.showPrevious();
 
         questionCount--;
-
         if (questionCount == 0 && currentCategory == 0) {
             prevButton.setVisibility(View.GONE);
         }
-        boolean flag;
-        switch (currentCategory) {
-            case 0:
-                flag = (questionCount < numberOfQuestions[0]);
-                nextButton.setClickable(flag);
-                break;
-            case 1:
-                flag = (questionCount < numberOfQuestions[1]);
-                nextButton.setClickable(flag);
-                break;
-            case 2:
-                flag = (questionCount < numberOfQuestions[2]);
-                nextButton.setClickable(flag);
-                break;
-            case 3:
-                flag = (questionCount < numberOfQuestions[3]);
-                nextButton.setClickable(flag);
-                break;
-            default:
-                break;
+
+        nextButton.setVisibility(View.VISIBLE);
+        if (questionCount < 0) {
+            currentCategory--;
+            questionCount = numberOfQuestions[currentCategory]-1;
         }
 
         setTitles();
-        nextButton.setVisibility(View.VISIBLE);
-        if (questionCount == 0) {
-            currentCategory--;
-            questionCount = numberOfQuestions[currentCategory];
-        }
     }
 
     public void nextView(View v) {
@@ -171,34 +181,16 @@ public class QuestionActivity extends AppCompatActivity {
             prevButton.setVisibility(View.VISIBLE);
         }
 
-        boolean flag;
-        switch (currentCategory) {
-            case 0:
-                flag = (questionCount < numberOfQuestions[0]);
-                nextButton.setClickable(flag);
-                break;
-            case 1:
-                flag = (questionCount < numberOfQuestions[1]);
-                nextButton.setClickable(flag);
-                break;
-            case 2:
-                flag = (questionCount < numberOfQuestions[2]);
-                nextButton.setClickable(flag);
-                break;
-            case 3:
-                flag = (questionCount < numberOfQuestions[3]);
-                nextButton.setClickable(flag);
-                break;
-            default:
-                break;
-        }
-
-        setTitles();
         nextButton.setVisibility(View.GONE);
-        if (questionCount == numberOfQuestions[currentCategory]-1) {
+        if (questionCount == 2 && currentCategory == 0) {
+            nextButton.setVisibility(View.VISIBLE);
+        }
+        if (questionCount == numberOfQuestions[currentCategory]) {
             questionCount = 0;
             currentCategory++;
         }
+
+        setTitles();
     }
 
 //    public static void buttonEffect(View button){

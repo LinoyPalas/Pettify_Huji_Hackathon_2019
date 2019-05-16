@@ -34,7 +34,7 @@
 
         <!--- Questions Layouts -->
 
-        <!--- first question -->
+        <!--- Category 1 question 1 -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                 android:onClick="pickSouth" />
         </LinearLayout>
 
-        <!--- second question -->
+        <!--- Category 1 question 2 -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -94,39 +94,99 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="30dp">
 
                 <ImageButton
                     android:id="@+id/groundWithGarden"
                     android:background="@drawable/ground_with_garden"
-                    android:layout_width="100dp"
+                    android:layout_width="120dp"
                     android:layout_height="100dp"
                     android:onClick="groundWithGarden" />
 
                 <ImageButton
                     android:id="@+id/ground"
                     android:background="@drawable/ground"
-                    android:layout_width="100dp"
+                    android:layout_width="120dp"
                     android:layout_height="100dp"
                     android:onClick="ground"/>
 
                 <ImageButton
                     android:id="@+id/aboveGround"
                     android:background="@drawable/above_ground"
-                    android:layout_width="100dp"
+                    android:layout_width="120dp"
                     android:layout_height="100dp"
                     android:onClick="aboveGround"/>
 
             </LinearLayout>
         </LinearLayout>
 
-        <!--- third question -->
-        <Button
+        <!--- Category 1 question 3 -->
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="third" />
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp">
 
+                <ImageButton
+                    android:id="@+id/dog"
+                    android:background="@drawable/dog"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:onClick="dog" />
+
+                <ImageButton
+                    android:id="@+id/cat"
+                    android:background="@drawable/cat"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:onClick="cat" />
+
+                <ImageButton
+                    android:id="@+id/fish"
+                    android:background="@drawable/fish"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:onClick="fish" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp">
+
+                <ImageButton
+                    android:id="@+id/lizard"
+                    android:background="@drawable/lizard"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:onClick="lizard" />
+
+                <ImageButton
+                    android:id="@+id/rabbit"
+                    android:background="@drawable/rabbit"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:onClick="rabbit"/>
+
+                <ImageButton
+                    android:id="@+id/bird"
+                    android:background="@drawable/bird"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:onClick="bird"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--- Category 2 question 1 -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
