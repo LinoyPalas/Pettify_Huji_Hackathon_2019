@@ -6,8 +6,9 @@
     "friendly": true,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "city":
-
+    "city":"נהריה",
+    "phone_num": "0544735977",
+    "organization": "SOS",
     "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091201/extra_large/ebff7ce75fd8b985f8c0bc593b704e03.jpg",
     "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
   },
@@ -18,7 +19,11 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090698/extra_large/90124f7588b9abd06de6257de35afae7.jpg"
+    "city":"אילת",
+    "phone_num": "0544687123",
+    "organization": "אנימלס",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090698/extra_large/90124f7588b9abd06de6257de35afae7.jpg",
+    "description": "אריק הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
   },
   {
     "animale_type": "dog",
@@ -27,7 +32,12 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090630/extra_large/7f16cf563ef35f5d62f2bac08b68175c.jpg"
+    "city":"ירושלים",
+    "phone_num": "0524675843",
+    "organization": "ירושלים אוהבת חיות",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090630/extra_large/7f16cf563ef35f5d62f2bac08b68175c.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "dog",
@@ -36,7 +46,12 @@
     "friendly": false,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090799/extra_large/9e1f21c12ccdbe1daba26592f51f9151.jpg"
+    "city":"חיפה",
+    "phone_num": "0544321456",
+    "organization": "צער בעלי חיים",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090799/extra_large/9e1f21c12ccdbe1daba26592f51f9151.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "dog",
@@ -45,7 +60,12 @@
     "friendly": false,
     "treatment": 1,
     "suitable_for_more_animals": false,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090853/extra_large/def1d6b7fa983fd18401138679a2ce8f.jpg"
+    "city":"עכו",
+    "phone_num": "0523675849",
+    "organization": "יד 4",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090853/extra_large/def1d6b7fa983fd18401138679a2ce8f.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "dog",
@@ -54,7 +74,12 @@
     "friendly": true,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090719/extra_large/4440a89342b62374963d3fb4d1be6427.jpg"
+    "city":"תל אביב",
+    "phone_num": "0523675849",
+    "organization": "צער בעלי חיים",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090719/extra_large/4440a89342b62374963d3fb4d1be6427.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "dog",
@@ -63,7 +88,12 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": false,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090758/extra_large/018165e482bbed4e027d5d6b064cebf3.jpg"
+    "city":"מצפה רמון",
+    "phone_num": "0584669832",
+    "organization": "תנו לחיות לחיות",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090758/extra_large/018165e482bbed4e027d5d6b064cebf3.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "dog",
@@ -72,7 +102,12 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": false,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090883/extra_large/7b8b4ceef4664cd482fd3d7ac89a0174.jpg"
+    "city":"קיסריה",
+    "phone_num": "0567234574",
+    "organization": "חדרה אוהבת חיות",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090883/extra_large/7b8b4ceef4664cd482fd3d7ac89a0174.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "dog",
@@ -81,7 +116,12 @@
     "friendly": false,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090911/extra_large/d4e31bb67251895732eb4f7a33eaa3fb.jpg"
+    "city":"רחובות",
+    "phone_num": "074356723",
+    "organization": "תנו לחיות לחיות",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090911/extra_large/d4e31bb67251895732eb4f7a33eaa3fb.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "dog",
@@ -90,7 +130,12 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091017/large/948423ca1499f39e3616ad50ad56e22f.jpg"
+    "city":"פרדס חנה",
+    "phone_num": "0544758923",
+    "organization": "חדרה אוהבת חיות",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091017/large/948423ca1499f39e3616ad50ad56e22f.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "cat",
@@ -99,7 +144,12 @@
     "friendly": true,
     "treatment": 2,
     "suitable_for_more_animals": false,
-    "image_link": "https://img.wcdn.co.il/f_auto"
+    "city":"חיפה",
+    "phone_num": "064789652",
+    "organization": "צער בעלי חיים",
+    "image_link": "https://img.wcdn.co.il/f_auto",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "cat",
@@ -108,7 +158,12 @@
     "friendly": true,
     "treatment": 1,
     "suitable_for_more_animals": false,
-    "image_link": "http://cdn.babamail.co.il/Images/2014/12/24/784e822f-4b1a-42a1-9330-46ba0795c641.jpg"
+    "city":"תל אביב",
+    "phone_num": "0543678364",
+    "organization": "צער בעלי חיים",
+    "image_link": "http://cdn.babamail.co.il/Images/2014/12/24/784e822f-4b1a-42a1-9330-46ba0795c641.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "cat",
@@ -117,7 +172,12 @@
     "friendly": false,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Siamese_cat.JPG/250px-Siamese_cat.JPG"
+    "city":"חדרה",
+    "phone_num": "0524356892",
+    "organization": "יד 4",
+    "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Siamese_cat.JPG/250px-Siamese_cat.JPG",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "cat",
@@ -126,7 +186,12 @@
     "friendly": false,
     "treatment": 2,
     "suitable_for_more_animals": true,
-    "image_link": "https://www.dailybuzz.co.il/wp-content/uploads/2016/10/mn1.png"
+    "city":"פרדס חנה",
+    "phone_num": "0546728343",
+    "organization": "חדרה אוהבת חיות",
+    "image_link": "https://www.dailybuzz.co.il/wp-content/uploads/2016/10/mn1.png",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "cat",
@@ -135,7 +200,12 @@
     "friendly": true,
     "treatment": 1,
     "suitable_for_more_animals": false,
-    "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0aElj5iYkC8iywAMJJ719QFVDh5QVOFp0yKwUHyiLqX9R6hMb"
+    "city":"ירושלים",
+    "phone_num": "054389273",
+    "organization": "ירושלים אוהבת חיות",
+    "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0aElj5iYkC8iywAMJJ719QFVDh5QVOFp0yKwUHyiLqX9R6hMb",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "hamster",
@@ -144,7 +214,12 @@
     "friendly": true,
     "treatment": 1,
     "suitable_for_more_animals": true,
-    "image_link": "https://www.ken-hatuki.co.il/wp-content/uploads/2013/03/HamsterREX468x362-main_Full.jpg"
+    "city":"באר שבע",
+    "phone_num": "0544678231",
+    "organization": "כלבים של אף אחד",
+    "image_link": "https://www.ken-hatuki.co.il/wp-content/uploads/2013/03/HamsterREX468x362-main_Full.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "lizard",
@@ -153,7 +228,12 @@
     "friendly": false,
     "treatment": 1,
     "suitable_for_more_animals": false,
-    "image_link": "https://www.tiuli.com/image/11b2213f3396c4e4fc0639ee33f9fdb0.jpg?&width=830&height=470"
+    "city":"חדרה",
+    "phone_num": "0547876321",
+    "organization": "חדרה אוהבת חיות",
+    "image_link": "https://www.tiuli.com/image/11b2213f3396c4e4fc0639ee33f9fdb0.jpg?&width=830&height=470",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "snake",
@@ -162,7 +242,12 @@
     "friendly": false,
     "treatment": 2,
     "suitable_for_more_animals": false,
-    "image_link": "https://www.hashikma-holon.co.il/wp-content/uploads/2018/06/c7269ecb5462f23744119df16554272a-e1529398191949.jpg"
+    "city":"תל אביב",
+    "phone_num": "027364776",
+    "organization": "תנו לחיות לחיות",
+    "image_link": "https://www.hashikma-holon.co.il/wp-content/uploads/2018/06/c7269ecb5462f23744119df16554272a-e1529398191949.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "turtle",
@@ -171,7 +256,12 @@
     "friendly": false,
     "treatment": 0,
     "suitable_for_more_animals": true,
-    "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Testudo_graeca02.jpg/250px-Testudo_graeca02.jpg"
+    "city":"אילת",
+    "phone_num": "056789778",
+    "organization": "יד 4",
+    "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Testudo_graeca02.jpg/250px-Testudo_graeca02.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "parrot",
@@ -180,7 +270,12 @@
     "friendly": true,
     "treatment": 0,
     "suitable_for_more_animals": true,
-    "image_link": "http://www.biopet.co.il/app/uploads/2016/02/dwf.png"
+    "city":"חיפה",
+    "phone_num": "0544678898",
+    "organization": "יד 4",
+    "image_link": "http://www.biopet.co.il/app/uploads/2016/02/dwf.png",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   },
   {
     "animale_type": "parrot",
@@ -189,6 +284,11 @@
     "friendly": true,
     "treatment": 0,
     "suitable_for_more_animals": true,
-    "image_link": "https://www.mikmik.co.il/wp-content/uploads/2015/12/P597060.jpg"
+    "city":"תל אביב",
+    "phone_num": "052344543",
+    "organization": "צער בעלי חיים",
+    "image_link": "https://www.mikmik.co.il/wp-content/uploads/2015/12/P597060.jpg",
+    "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+
   }
 ]
