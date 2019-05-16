@@ -4,26 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4E4E50"
     tools:context=".QuestionActivity">
 
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
         android:text="@string/residence_title"
+        android:textColor="#CDDC39"
         android:textSize="36sp" />
 
     <TextView
         android:id="@+id/questionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/titleTextView"
-        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
         android:text="@string/chooseLoc"
+        android:textColor="#CDDC39"
         android:textSize="26sp" />
 
     <ViewFlipper
@@ -38,8 +44,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/northBtn"
@@ -67,8 +73,9 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -77,46 +84,47 @@
 
                 <ImageButton
                     android:id="@+id/privateHome"
-                    android:background="@drawable/private_home"
                     android:layout_width="130dp"
                     android:layout_height="150dp"
+                    android:background="@drawable/private_home"
                     android:onClick="privateHome" />
 
                 <ImageButton
                     android:id="@+id/apartment"
-                    android:background="@drawable/apartment"
                     android:layout_width="130dp"
                     android:layout_height="150dp"
+                    android:background="@drawable/apartment"
                     android:onClick="apartment" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="30dp">
 
                 <ImageButton
                     android:id="@+id/aboveGround"
-                    android:background="@drawable/above_ground"
                     android:layout_width="130dp"
                     android:layout_height="78dp"
-                    android:onClick="aboveGround"/>
+                    android:background="@drawable/above_ground"
+                    android:onClick="aboveGround" />
 
                 <ImageButton
                     android:id="@+id/ground"
-                    android:background="@drawable/ground"
                     android:layout_width="130dp"
                     android:layout_height="78dp"
-                    android:onClick="ground"/>
+                    android:background="@drawable/ground"
+                    android:onClick="ground" />
 
                 <ImageButton
                     android:id="@+id/groundWithGarden"
-                    android:background="@drawable/ground_with_garden"
                     android:layout_width="130dp"
                     android:layout_height="78dp"
+                    android:background="@drawable/ground_with_garden"
                     android:onClick="groundWithGarden" />
 
             </LinearLayout>
@@ -126,8 +134,9 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -136,26 +145,27 @@
 
                 <ImageButton
                     android:id="@+id/dog"
-                    android:background="@drawable/dog"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+                    android:background="@drawable/dog"
                     android:onClick="dog" />
 
                 <ImageButton
                     android:id="@+id/cat"
-                    android:background="@drawable/cat"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+                    android:background="@drawable/cat"
                     android:onClick="cat" />
 
                 <ImageButton
                     android:id="@+id/fish"
-                    android:background="@drawable/fish"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+                    android:background="@drawable/fish"
                     android:onClick="fish" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -164,24 +174,24 @@
 
                 <ImageButton
                     android:id="@+id/lizard"
-                    android:background="@drawable/lizard"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+                    android:background="@drawable/lizard"
                     android:onClick="lizard" />
 
                 <ImageButton
                     android:id="@+id/rabbit"
-                    android:background="@drawable/rabbit"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
-                    android:onClick="rabbit"/>
+                    android:background="@drawable/rabbit"
+                    android:onClick="rabbit" />
 
                 <ImageButton
                     android:id="@+id/bird"
-                    android:background="@drawable/bird"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
-                    android:onClick="bird"/>
+                    android:background="@drawable/bird"
+                    android:onClick="bird" />
 
             </LinearLayout>
         </LinearLayout>
@@ -190,8 +200,9 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -200,21 +211,22 @@
 
                 <ImageButton
                     android:id="@+id/single"
-                    android:background="@drawable/single"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
-                    android:layout_marginRight="70dp"
                     android:layout_marginEnd="70dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/single"
                     android:onClick="single" />
 
                 <ImageButton
                     android:id="@+id/roommates"
-                    android:background="@drawable/roommates"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+                    android:background="@drawable/roommates"
                     android:onClick="roommates" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -223,21 +235,21 @@
 
                 <ImageButton
                     android:id="@+id/married"
-                    android:background="@drawable/married"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
                     android:layout_marginTop="30dp"
-                    android:layout_marginRight="70dp"
                     android:layout_marginEnd="70dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/married"
                     android:onClick="married" />
 
                 <ImageButton
                     android:id="@+id/marriedPlus"
-                    android:background="@drawable/married_plus"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
                     android:layout_marginTop="30dp"
-                    android:onClick="marriedPlus"/>
+                    android:background="@drawable/married_plus"
+                    android:onClick="marriedPlus" />
 
             </LinearLayout>
         </LinearLayout>
@@ -246,8 +258,9 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -256,50 +269,51 @@
 
                 <ImageButton
                     android:id="@+id/full_time_job"
-                    android:background="@drawable/full_time_job"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+                    android:background="@drawable/full_time_job"
                     android:onClick="pickFullTimeJob" />
 
                 <ImageButton
                     android:id="@+id/part_time_job"
-                    android:background="@drawable/part_time_job"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+                    android:background="@drawable/part_time_job"
                     android:onClick="pickHalfTimeJob" />
 
                 <ImageButton
                     android:id="@+id/unemployed"
-                    android:background="@drawable/unemployed"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+                    android:background="@drawable/unemployed"
                     android:onClick="pickunemployed" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="15dp"
                 android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="30dp">
 
                 <ImageButton
                     android:id="@+id/animal_friendly"
-                    android:background="@drawable/friendly"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
-                    android:layout_marginRight="30dp"
                     android:layout_marginEnd="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/friendly"
                     android:onClick="pickAnimalFriendly" />
 
                 <ImageButton
                     android:id="@+id/unfriendly"
-                    android:background="@drawable/unfriendly"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
-                    android:layout_marginRight="30dp"
                     android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/unfriendly"
                     android:onClick="unFriendly" />
 
             </LinearLayout>
@@ -309,8 +323,9 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -319,16 +334,16 @@
 
                 <ImageButton
                     android:id="@+id/allergic"
-                    android:background="@drawable/allergic"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+                    android:background="@drawable/allergic"
                     android:onClick="pickAllergic" />
 
                 <ImageButton
                     android:id="@+id/unallergic"
-                    android:background="@drawable/unallergic"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
+                    android:background="@drawable/unallergic"
                     android:onClick="pickUnallergic" />
             </LinearLayout>
         </LinearLayout>
@@ -340,7 +355,6 @@
 
     <ImageButton
         android:id="@+id/nextButton"
-        android:background="@drawable/next"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_alignParentStart="true"
@@ -353,12 +367,12 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/next"
         android:onClick="nextView"
         android:text="@string/continue_btn" />
 
     <ImageButton
         android:id="@+id/prevButton"
-        android:background="@drawable/prev"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_alignParentEnd="true"
@@ -371,6 +385,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/prev"
         android:onClick="previousView"
         android:text="@string/back_btn" />
 
