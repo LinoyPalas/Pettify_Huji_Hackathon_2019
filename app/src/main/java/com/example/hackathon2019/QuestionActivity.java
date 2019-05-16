@@ -27,17 +27,17 @@ public class QuestionActivity extends AppCompatActivity {
 
         prevButton = findViewById(R.id.prevButton);
         nextButton = findViewById(R.id.nextButton);
-        if (questionCount <= 1) {
-            prevButton.setClickable(false);
-        }
+        prevButton.setVisibility(View.GONE);
     }
 
     public void previousView(View v) {
         signupFlipper.setInAnimation(this, R.anim.slide_in_right);
         signupFlipper.setOutAnimation(this, R.anim.slide_out_left);
         signupFlipper.showPrevious();
+
+        questionCount--;
         if (questionCount <= 1) {
-            prevButton.setClickable(false);
+            prevButton.setVisibility(View.GONE);
         }
         boolean flag;
         switch (currentCategory) {
@@ -60,15 +60,16 @@ public class QuestionActivity extends AppCompatActivity {
             default:
                 break;
         }
-        questionCount--;
     }
 
     public void nextView(View v) {
         signupFlipper.setInAnimation(this, android.R.anim.slide_in_left);
         signupFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
         signupFlipper.showNext();
+
+        questionCount++;
         if (questionCount > 1) {
-            prevButton.setClickable(true);
+            prevButton.setVisibility(View.VISIBLE);
         }
         boolean flag;
         switch (currentCategory) {
@@ -91,6 +92,5 @@ public class QuestionActivity extends AppCompatActivity {
             default:
                 break;
         }
-        questionCount++;
     }
 }
