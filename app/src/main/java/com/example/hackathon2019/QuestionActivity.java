@@ -1,7 +1,9 @@
 package com.example.hackathon2019;
 
+import android.graphics.PorterDuff;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -16,14 +18,17 @@ public class QuestionActivity extends AppCompatActivity {
     public boolean answered = false;
 
     public ImageButton prevButton, nextButton, northButton, centerButton, southButton;
+    public ImageButton privateHome,apartment, ground, groundWithGarden, aboveGround;
 
-    public int questionCount = 1;
-    public final int[] numberOfQuestions = {3, 3, 2, 3};
-    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{}};
+    public int questionCount = 0;
+    public final int[] numberOfQuestions = {3, 3, 3, 2};
+    public final String[] categoryTitles = {"מגורים", "אישי", "עבודה", "בריאותי"};
+    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי"}};
 
     public int currentCategory = 0;  // 0 = first category
 
     public String location;
+    public String[] livingArrangement = new String[2];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,9 +45,56 @@ public class QuestionActivity extends AppCompatActivity {
         prevButton.setVisibility(View.GONE);
         nextButton.setVisibility(View.GONE);
 
+        ground = findViewById(R.id.ground);
+        groundWithGarden = findViewById(R.id.groundWithGarden);
+        aboveGround = findViewById(R.id.aboveGround);
+        ground.setVisibility(View.GONE);
+        groundWithGarden.setVisibility(View.GONE);
+        aboveGround.setVisibility(View.GONE);
+
         title = findViewById(R.id.titleTextView);
         question = findViewById(R.id.questionTextView);
 
+        setTitles();
+
+    }
+
+    public void setTitles() {
+        title.setText(categoryTitles[currentCategory]);
+        question.setText(questionTitles[currentCategory][questionCount]);
+    }
+
+    public void privateHome(View v) {
+        livingArrangement[0] = "Home";
+        livingArrangement[1] = null;
+        nextButton.setVisibility(View.VISIBLE);
+        ground.setVisibility(View.GONE);
+        groundWithGarden.setVisibility(View.GONE);
+        aboveGround.setVisibility(View.GONE);
+//        buttonEffect(v);
+    }
+
+    public void apartment(View v) {
+        livingArrangement[0] = "Apartment";
+        ground.setVisibility(View.VISIBLE);
+        groundWithGarden.setVisibility(View.VISIBLE);
+        aboveGround.setVisibility(View.VISIBLE);
+        nextButton.setVisibility(View.GONE);
+    }
+
+    public void groundWithGarden(View v) {
+        livingArrangement[1] = "withGarden";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void ground(View v) {
+        livingArrangement[1] = "ground";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void aboveGround(View v) {
+        livingArrangement[1] = "aboveGround";
+        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void pickNorth(View v) {
@@ -75,7 +127,8 @@ public class QuestionActivity extends AppCompatActivity {
         signupFlipper.showPrevious();
 
         questionCount--;
-        if (questionCount <= 1) {
+
+        if (questionCount == 0 && currentCategory == 0) {
             prevButton.setVisibility(View.GONE);
         }
         boolean flag;
@@ -99,6 +152,13 @@ public class QuestionActivity extends AppCompatActivity {
             default:
                 break;
         }
+
+        setTitles();
+        nextButton.setVisibility(View.VISIBLE);
+        if (questionCount == 0) {
+            currentCategory--;
+            questionCount = numberOfQuestions[currentCategory];
+        }
     }
 
     public void nextView(View v) {
@@ -107,9 +167,10 @@ public class QuestionActivity extends AppCompatActivity {
         signupFlipper.showNext();
 
         questionCount++;
-        if (questionCount > 1) {
+        if (questionCount > 0 || currentCategory > 0) {
             prevButton.setVisibility(View.VISIBLE);
         }
+
         boolean flag;
         switch (currentCategory) {
             case 0:
@@ -132,6 +193,32 @@ public class QuestionActivity extends AppCompatActivity {
                 break;
         }
 
+        setTitles();
         nextButton.setVisibility(View.GONE);
+        if (questionCount == numberOfQuestions[currentCategory]-1) {
+            questionCount = 0;
+            currentCategory++;
+        }
     }
+
+//    public static void buttonEffect(View button){
+//        button.setOnTouchListener(new View.OnTouchListener() {
+//
+//            public boolean onTouch(View v, MotionEvent event) {
+//                switch (event.getAction()) {
+//                    case MotionEvent.ACTION_DOWN: { // TODO: change color
+//                        v.getBackground().setColorFilter(0xe0f47521, PorterDuff.Mode.SRC_ATOP);
+//                        v.invalidate();
+//                        break;
+//                    }
+////                    case MotionEvent.ACTION_UP: {
+////                        v.getBackground().clearColorFilter();
+////                        v.invalidate();
+////                        break;
+////                    }
+//                }
+//                return false;
+//            }
+//        });
+//    }
 }
