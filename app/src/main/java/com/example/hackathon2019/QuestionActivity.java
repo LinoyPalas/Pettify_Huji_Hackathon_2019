@@ -30,7 +30,7 @@ public class QuestionActivity extends AppCompatActivity {
 
     public String location;
     public int livingArrangement;
-    public String extraAnimals = "";
+    public boolean extraAnimals = false;
     public int personalStatus;
 
     public String job;
@@ -121,32 +121,32 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void dog(View v) {
-        extraAnimals += "dog, ";
+        extraAnimals = true;
         dog.setBackground(getResources().getDrawable(R.drawable.dog_sel));
     }
 
     public void cat(View v) {
-        extraAnimals += "cat, ";
+        extraAnimals = true;
         cat.setBackground(getResources().getDrawable(R.drawable.cat_sel));
     }
 
     public void fish(View v) {
-        extraAnimals += "fish, ";
+        extraAnimals = true;
         fish.setBackground(getResources().getDrawable(R.drawable.fish_sel));
     }
 
     public void lizard(View v) {
-        extraAnimals += "lizard, ";
+        extraAnimals = true;
         lizard.setBackground(getResources().getDrawable(R.drawable.lizard));
     }
 
     public void bird(View v) {
-        extraAnimals += "bird, ";
+        extraAnimals = true;
         bird.setBackground(getResources().getDrawable(R.drawable.bird_sel));
     }
 
     public void rabbit(View v) {
-        extraAnimals += "rabbit, ";
+        extraAnimals = true;
         rabbit.setBackground(getResources().getDrawable(R.drawable.rabbit_sel));
     }
 
@@ -322,4 +322,7 @@ public class QuestionActivity extends AppCompatActivity {
             setTitles();
         }
     }
+
+    Questionnaire curQS = new Questionnaire(personalStatus, livingArrangement, location, extraAnimals,
+            allergic, )
 }
