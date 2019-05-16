@@ -1,5 +1,6 @@
 package com.example.hackathon2019;
 
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
@@ -29,7 +30,7 @@ public class QuestionActivity extends AppCompatActivity {
     public int questionCount = 0;
     public final int[] numberOfQuestions = {3, 1, 1, 1};
     public final String[] categoryTitles = {"מגורים", "אישי", "עבודה", "בריאותי"};
-    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי"}, {"מקום עבודה"}, {"אלרגיות?", "נכות?"}};
+    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי"}, {"מקום עבודה"}, {"אלרגיות?"}};
 
     public int currentCategory = 0;  // 0 = first category
 
@@ -351,9 +352,10 @@ public class QuestionActivity extends AppCompatActivity {
     public void nextView(View v) {
         signupFlipper.setInAnimation(this, android.R.anim.slide_in_left);
         signupFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
-        if (questionCount == numberOfQuestions[currentCategory] && currentCategory == 3) {
+        if (questionCount == numberOfQuestions[currentCategory]-1 && currentCategory == 3) {
             nextButton.setVisibility(View.GONE);
-            //TODO move to the loading screen
+            Intent startIntent = new Intent(getApplicationContext(), CalculatingActivity.class);
+            startActivity(startIntent);
         }
         else{
             signupFlipper.showNext();
