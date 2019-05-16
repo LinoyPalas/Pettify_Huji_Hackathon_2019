@@ -34,6 +34,62 @@
 
         <!--- Questions Layouts -->
 
+        <!--- Category 2 question 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp">
+
+                <ImageButton
+                    android:id="@+id/single"
+                    android:background="@drawable/single"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:onClick="single" />
+
+                <ImageButton
+                    android:id="@+id/roommates"
+                    android:background="@drawable/roommates"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:onClick="roommates" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp">
+
+                <ImageButton
+                    android:id="@+id/married"
+                    android:background="@drawable/married"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:onClick="married" />
+
+                <ImageButton
+                    android:id="@+id/marriedPlus"
+                    android:background="@drawable/married_plus"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="30dp"
+                    android:onClick="marriedPlus"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
         <!--- Category 1 question 1 -->
         <LinearLayout
             android:layout_width="wrap_content"
@@ -186,12 +242,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!--- Category 2 question 1 -->
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="fourth" />
+
 
         <!--- End Questions Layouts -->
 
