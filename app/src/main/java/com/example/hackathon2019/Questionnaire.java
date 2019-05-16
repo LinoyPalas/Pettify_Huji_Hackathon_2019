@@ -8,7 +8,7 @@ public class Questionnaire {
     String status; // Single\Married\With children
 
 //  living
-    int residence;
+     int residence;
     String climate;
     boolean anotherAnimal;
 
@@ -19,6 +19,8 @@ public class Questionnaire {
 //  workPlace
     int workStatus; //0 not working
     boolean animalFriendly;
+  
+     public Questionnaire(){}
 
     public void setMail(String mail) {
         this.mail = mail;
@@ -40,9 +42,11 @@ public class Questionnaire {
         this.climate = climate;
     }
 
+
     public void setAnotherAnimal(boolean anotherAnimal) {
         this.anotherAnimal = anotherAnimal;
     }
+
 
     public void setAllergies(boolean allergies) {
         this.allergies = allergies;
@@ -52,18 +56,13 @@ public class Questionnaire {
         this.allergiesKind = allergiesKind;
     }
 
+
     public void setWorkStatus(int workStatus) {
         this.workStatus = workStatus;
+
     }
 
     public void setAnimalFriendly(boolean animalFriendly) {
         this.animalFriendly = animalFriendly;
     }
-
-
-    public Questionnaire(){}
-
-
-
-
 }

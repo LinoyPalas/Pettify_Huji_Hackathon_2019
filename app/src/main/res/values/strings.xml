@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Hackathon2019</string>
+    <string name="residence_title">מגורים</string>
+    <string name="continue_btn">המשך</string>
+    <string name="back_btn">חזרה</string>
+    <string name="chooseLoc">בחר איזור</string>
 </resources>
