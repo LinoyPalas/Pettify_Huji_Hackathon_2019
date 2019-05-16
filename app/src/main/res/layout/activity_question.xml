@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/secular_one"
         android:text="@string/residence_title"
         android:textColor="#CDDC39"
         android:textSize="36sp" />
@@ -28,6 +29,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
+        android:fontFamily="@font/secular_one"
         android:text="@string/chooseLoc"
         android:textColor="#CDDC39"
         android:textSize="26sp" />
