@@ -15,21 +15,20 @@ public class QuestionActivity extends AppCompatActivity {
     public ViewFlipper signupFlipper;
     public TextView title, question;
 
-    public boolean answered = false;
-
     public ImageButton prevButton, nextButton, northButton, centerButton, southButton;
     public ImageButton privateHome,apartment, ground, groundWithGarden, aboveGround;
 
     public int questionCount = 0;
-    public final int[] numberOfQuestions = {3, 2, 3, 2};
+    public final int[] numberOfQuestions = {3, 1, 3, 2};
     public final String[] categoryTitles = {"מגורים", "אישי", "עבודה", "בריאותי"};
-    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי", "מספר נפשות בבית"}};
+    public final String[][] questionTitles = {{"בחר איזור", "סגנון מגורים", "האם יש בע״ח נוסף?"},{"מצב משפחתי"}};
 
     public int currentCategory = 0;  // 0 = first category
 
     public String location;
     public String[] livingArrangement = new String[2];
     public String extraAnimals = "";
+    public String personalStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +57,26 @@ public class QuestionActivity extends AppCompatActivity {
 
         setTitles();
 
+    }
+
+    public void single(View v) {
+        personalStatus = "Single";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void roommates(View v) {
+        personalStatus = "Roomies";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void married(View v) {
+        personalStatus = "Married";
+        nextButton.setVisibility(View.VISIBLE);
+    }
+
+    public void marriedPlus(View v) {
+        personalStatus = "Married+";
+        nextButton.setVisibility(View.VISIBLE);
     }
 
     public void dog(View v) {
