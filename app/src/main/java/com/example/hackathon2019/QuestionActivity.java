@@ -13,6 +13,8 @@ import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class QuestionActivity extends AppCompatActivity {
 
@@ -391,24 +393,25 @@ public class QuestionActivity extends AppCompatActivity {
                 allergic, job, animalFriendly);
         user = new User(curQS);
         data = new Data();
-        class UniquePair implements Comparable<com.example.hackathon2019.UniquePair> {
-            public Integer score;
-            public Animal animal;
-
-            UniquePair(int score, Animal animal) {
-                this.score = score;
-                this.animal = animal;
-            }
-
-            public int compareTo(com.example.hackathon2019.UniquePair other) {
-                return this.score.compareTo(other.score);
-            }
-        }
-        matches = new ArrayList<>(20);
-        for(int i = 0; i <20; i++){
-            Match match = new Match(data.allAnimals[i], user);
-            UniquePair pair = new UniquePair(match.getMatch(), data.allAnimals[i]);
+        matches = new ArrayList<UniquePair>(20);
+        for(int i = 0; i <3; i++){
+            Match match = new Match(data.allAnimals.get(i), user);
+            UniquePair pair = new UniquePair(match.getMatch(), data.allAnimals.get(i));
             matches.add(pair);
+        }
+    }
+
+    class UniquePair implements Comparable<com.example.hackathon2019.UniquePair> {
+        public Integer score;
+        public Animal animal;
+
+        UniquePair(int score, Animal animal) {
+            this.score = score;
+            this.animal = animal;
+        }
+
+        public int compareTo(com.example.hackathon2019.UniquePair other) {
+            return this.score.compareTo(other.score);
         }
     }
 

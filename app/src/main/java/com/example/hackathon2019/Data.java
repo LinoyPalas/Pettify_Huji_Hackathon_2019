@@ -6,11 +6,12 @@ public class Data {
     ArrayList<Animal> allAnimals;
 
     Data(){
+        allAnimals=new ArrayList<>(20);
 
         Animal a1 = new Animal("dog", "south", 0, true,
                 1,true,"מצפה רמון", "0544678985","יד 4",
                 "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091201/extra_large/ebff7ce75fd8b985f8c0bc593b704e03.jpg",
-                "\"דני\\nכלב קטן ומתוק, שמחפש משפחה אוהבת.דני כלב נוח וקל לטיפול. אוהב אנשים וחיות אחרות.");
+                "\"דני\nכלב קטן ומתוק, שמחפש משפחה אוהבת.דני כלב נוח וקל לטיפול. אוהב אנשים וחיות אחרות.");
         allAnimals.add(a1);
 
         Animal a2 = new Animal("dog",
