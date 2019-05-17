@@ -14,173 +14,101 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/secular_one"
-        android:text="החבר החדש שלך הוא..."
+        android:text="מצאנו!"
         android:textColor="#CDDC39"
         android:textSize="36sp" />
 
-    <ScrollView
+    <LinearLayout
+        android:id="@+id/lin1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/titleTextView"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="67dp">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView">
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="35dp"
+            />
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="40dp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:orientation="vertical">
+    </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/btn1"
-                android:layout_width="200dip"
-                android:layout_height="200dip"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginBottom="5dp" />
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@id/lin1">
 
-            <TextView
-                android:id="@+id/txt1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginBottom="25dp"
-                android:text="placeholder"
-                android:textColor="#CDDC39"
-                android:textSize="18sp" />
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/secular_one"
+            android:textColor="#CDDC39"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/secular_one"
+            android:textColor="#CDDC39"
+            android:textSize="14sp" />
 
-            <ImageButton
-                android:id="@+id/btn2"
-                android:layout_width="200dip"
-                android:layout_height="200dip"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginBottom="5dp" />
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/txt2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginBottom="25dp"
-                android:text="placeholder"
-                android:textColor="#CDDC39"
-                android:textSize="18sp" />
+    <LinearLayout
+        android:id="@+id/lin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin2">
 
-            <ImageButton
-                android:id="@+id/btn3"
-                android:layout_width="200dip"
-                android:layout_height="200dip"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginBottom="5dp" />
+        <ImageButton
+            android:id="@+id/btn4"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="35dp"
+            />
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="40dp"/>
 
-            <TextView
-                android:id="@+id/txt3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginBottom="25dp"
-                android:text="placeholder"
-                android:textColor="#CDDC39"
-                android:textSize="18sp" />
+    </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/btn4"
-                android:layout_width="200dip"
-                android:layout_height="200dip"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/map_01" />
+    <LinearLayout
+        android:id="@+id/lin4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin3">
 
-            <TextView
-                android:id="@+id/txt4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginBottom="25dp"
-                android:text="placeholder"
-                android:textColor="#CDDC39"
-                android:textSize="18sp" />
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/secular_one"
+            android:textColor="#CDDC39"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/secular_one"
+            android:textColor="#CDDC39"
+            android:textSize="14sp" />
 
-            <ImageButton
-                android:id="@+id/btn5"
-                android:layout_width="200dip"
-                android:layout_height="200dip"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginBottom="5dp" />
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/txt5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginBottom="25dp"
-                android:text="placeholder"
-                android:textColor="#CDDC39"
-                android:textSize="18sp" />
-
-            <ImageButton
-                android:id="@+id/btn6"
-                android:layout_width="200dip"
-                android:layout_height="200dip"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginBottom="5dp" />
-
-            <TextView
-                android:id="@+id/txt6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginBottom="25dp"
-                android:text="placeholder"
-                android:textColor="#CDDC39"
-                android:textSize="18sp" />
-
-            <ImageButton
-                android:id="@+id/btn7"
-                android:layout_width="200dip"
-                android:layout_height="200dip"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginBottom="5dp" />
-
-            <TextView
-                android:id="@+id/txt7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginBottom="25dp"
-                android:text="placeholder"
-                android:textColor="#CDDC39"
-                android:textSize="18sp" />
-
-            <ImageButton
-                android:id="@+id/btn8"
-                android:layout_width="200dip"
-                android:layout_height="200dip"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginBottom="5dp" />
-
-            <TextView
-                android:id="@+id/txt8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginBottom="25dp"
-                android:text="placeholder"
-                android:textColor="#CDDC39"
-                android:textSize="18sp" />
-
-        </LinearLayout>
-    </ScrollView>
 
 </RelativeLayout>
