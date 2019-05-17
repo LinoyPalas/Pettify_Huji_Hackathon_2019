@@ -401,6 +401,7 @@ public class QuestionActivity extends AppCompatActivity {
             matches.add(pair);
         }
         Collections.sort(matches);
+        Collections.reverse(matches);
     }
 
     class UniquePair implements Comparable<UniquePair> {
