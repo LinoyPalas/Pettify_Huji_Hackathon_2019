@@ -62,21 +62,27 @@ public class ResultActivity extends AppCompatActivity {
 //        txt7.setText(descArray[6]);
 //        txt8.setText(descArray[7]);
 
-        btn1.setBackground(LoadImageFromWebOperations(imgArray[0]));
-        btn2.setBackground(LoadImageFromWebOperations(imgArray[1]));
+        LoadImageFromWebOperations(imgArray[0], btn1);
+        LoadImageFromWebOperations(imgArray[1], btn2);
 
 
 
     }
 
-    public static Drawable LoadImageFromWebOperations(String url) {
-        try {
-            InputStream is = (InputStream) new URL(url).getContent();
-            Drawable d = Drawable.createFromStream(is, "src name");
-            return d;
-        } catch (Exception e) {
-            return null;
-        }
+    public static void LoadImageFromWebOperations(final String url, final ImageButton btn) {
+        Thread th = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    InputStream is = (InputStream) new URL(url).getContent();
+                    Drawable d = Drawable.createFromStream(is, "src name");
+                    btn.setBackground(d);
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+            }
+        });
+        th.start();
     }
 
 
