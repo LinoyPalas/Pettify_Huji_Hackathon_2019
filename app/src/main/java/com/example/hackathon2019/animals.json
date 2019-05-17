@@ -1,17 +1,18 @@
+
 [
   {
 
-  "animale_type": "dog",
-  "area": "south",
-  "suitable_for_apartment": 0,
-  "friendly": true,
-  "treatment": 1,
-  "suitable_for_more_animals": true,
-  "city":"מצפה רמון",
-  "phone_num":"054587684" ,
-  "organization":"יד 4",
-  "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091201/extra_large/ebff7ce75fd8b985f8c0bc593b704e03.jpg",
-  "description": "דני הוא כלב קטן ומתוק, שמחפש משפחה אוהבת. לדני אין הרבה דרישות יכול לגור בדירה ולא דורש הרבה טיפול. אוהב אנשים וחיות אחרות. "
+    "animale_type": "dog",
+    "area": "south",
+    "suitable_for_apartment": 0,
+    "friendly": true,
+    "treatment": 1,
+    "suitable_for_more_animals": true,
+    "city":"מצפה רמון",
+    "phone_num":"0545878684" ,
+    "organization":"יד 4",
+    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091201/extra_large/ebff7ce75fd8b985f8c0bc593b704e03.jpg",
+    "description": "דני\nכלב קטן ומתוק, שמחפש משפחה אוהבת.\nדני כלב נוח וקל לטיפול. אוהב אנשים וחיות אחרות. "
 
   },
   {
@@ -22,10 +23,10 @@
     "treatment": 2,
     "suitable_for_more_animals": true,
     "city":"עכו",
-    "phone_num":"054589984" ,
+    "phone_num":"0545899840" ,
     "organization":"יד 4",
     "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090698/extra_large/90124f7588b9abd06de6257de35afae7.jpg",
-    "description": "בלה גורה מעורבת בת 3 חודשים בעלת פרווה קצרה שצפויה להיות בינונית בגודלה. כלבה חכמה שרק מתחילה את חייה רוצה לחלוק אותם עם אנשים בעלי ניסיון בחינוך גורים"
+    "description": "בלה\nגורה מעורבת בת 3 חודשים בעלת פרווה קצרה שצפויה להיות בינונית בגודלה.\nכלבה חכמה שרק מתחילה את חייה רוצה לחלוק אותם עם אנשים בעלי ניסיון בחינוך גורים"
 
   },
   {
@@ -39,7 +40,7 @@
     "phone_num":"054587684" ,
     "organization":"צער בעלי חיים",
     "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090630/extra_large/7f16cf563ef35f5d62f2bac08b68175c.jpg",
-    "description": "באדי כלב מעורב בן 4 שנים, מחונך וממושמע. כלב טוב שרגיל לבית מחפש התחלה חדשה עם בעלים אוהבים שיעניקו לו בית חם לכל חייו"
+    "description": "באדי\nכלב מעורב בן 4 שנים, מחונך וממושמע.\nכלב טוב שרגיל לבית מחפש התחלה חדשה עם בעלים אוהבים שיעניקו לו בית חם לכל חייו"
 
   },
   {
@@ -53,7 +54,7 @@
     "phone_num":"054997684" ,
     "organization":"תנו לחיות לחיות",
     "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090799/extra_large/9e1f21c12ccdbe1daba26592f51f9151.jpg",
-    "description": "ג'סי כלבה מעורבת בת 3 שנים, מאוד עדינה וחששנית. כלבה חמודה שברגע שהיא מכירה ונפתחת מראה אופי מדהים, זקוקה לבעלים סבלניים. "
+    "description": "ג'סי כלבה מעורבת בת 3 שנים, מאוד עדינה וחששנית.\nכלבה חמודה שברגע שהיא מכירה ונפתחת מראה אופי מדהים, זקוקה לבעלים סבלניים. "
 
   },
   {
@@ -67,7 +68,7 @@
     "phone_num":"054487684" ,
     "organization":"חדרה אוהבת חיות",
     "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090853/extra_large/def1d6b7fa983fd18401138679a2ce8f.jpg",
-    "description": "לולה כלבה דלמטית מקסימה, מתאימה לדירה ולא דורשת הרבה טיפול אוהבת להתבודד מחפשת בית חם."
+    "description": "לולה\nכלבה דלמטית מקסימה, מתאימה לדירה ולא דורשת הרבה טיפול אוהבת להתבודד מחפשת בית חם."
 
   },
   {
@@ -81,7 +82,7 @@
     "phone_num":"054587684" ,
     "organization":"יד 4",
     "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090719/extra_large/4440a89342b62374963d3fb4d1be6427.jpg",
-    "description": "טאקינקבה, בת שנה, כלבת רועים מעורבת בת שנה, עדינה מאוד וחששנית. כלבה שצריכה זמן להיפתח זקוקה לבעלים סבלניים ועדינים כמוה, שיחנכו, יאהבו ויתנו לה בית חם"
+    "description": "טאקינקבה\nבת שנה, כלבת רועים מעורבת בת שנה, עדינה מאוד וחששנית.\nכלבה שצריכה זמן להיפתח זקוקה לבעלים סבלניים ועדינים כמוה, שיחנכו, יאהבו ויתנו לה בית חם"
 
   },
   {
@@ -95,7 +96,7 @@
     "phone_num":"054587684" ,
     "organization":"אילת אוהבת חיות",
     "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090758/extra_large/018165e482bbed4e027d5d6b064cebf3.jpg",
-    "description": " כלב ביגל קטן ומתוק, מחפש בית אוהב שיטפל וישחק איתו"
+    "description": "קוקו\n כלב ביגל קטן ומתוק, מחפש בית אוהב שיטפל וישחק איתו"
 
   },
   {
@@ -109,7 +110,7 @@
     "phone_num":"054587684" ,
     "organization":"חדרה אוהבת חיות",
     "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090883/extra_large/7b8b4ceef4664cd482fd3d7ac89a0174.jpg",
-    "description": "רובי כלבה מעורבת בת 4 חודשים, שובבה ונמרצת. גורה שובת לב רוצה להתחיל פרק חדש עם בעלים אחראיים שיודעים לחנך ובעיקר לאהוב "
+    "description": "רובי\nכלבה מעורבת בת 4 חודשים, שובבה ונמרצת.\nגורה שובת לב רוצה להתחיל פרק חדש עם בעלים אחראיים שיודעים לחנך ובעיקר לאהוב "
 
   },
   {
@@ -123,7 +124,7 @@
     "phone_num":"054587684" ,
     "organization":"תנו לחיות לחיות",
     "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2090911/extra_large/d4e31bb67251895732eb4f7a33eaa3fb.jpg",
-    "description": "מוניק, בת 7 שנים כלבה מעורבת בינונית בגודלה בת 7 שנים, מחונכת וחכמה. כלבה בוגרת שרגילה לחיים בבית עם כלבה נוספת (מרגו) והיא תשמח למצוא בית יחד איתה עם בעלים אוהבים ואחראיים "
+    "description": "מוניק\nבת 7 שנים כלבה מעורבת בינונית בגודלה בת 7 שנים, מחונכת וחכמה.\nכלבה בוגרת שרגילה לחיים בבית עם כלבה נוספת (מרגו) והיא תשמח למצוא בית יחד איתה עם בעלים אוהבים ואחראיים "
 
   },
   {
@@ -137,7 +138,7 @@
     "phone_num":"054587684" ,
     "organization":"יד 4",
     "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091017/large/948423ca1499f39e3616ad50ad56e22f.jpg",
-    "description": "לוק, בן 7 חודשי nכלב מעורב ובינוני בגודלו בן 7 חודשים, צעיר וסקרן. כלב מתוק שמתחיל את חייו ומחפש מישהו שיעניק לו ביטחון ובית לכל החיים. זקוק עדיין לחינוך ולהרבה פעילות "
+    "description": "לוק\nבן 7 חודשים, מעורב ובנינו בגודלו.\nכלב מתוק שמתחיל את חייו ומחפש מישהו שיעניק לו ביטחון ובית לכל החיים. זקוק עדיין לחינוך ולהרבה פעילות "
 
   },
 
@@ -152,7 +153,7 @@
     "phone_num": "054-8944123",
     "organization": "יד 4 - נהריה אוהבת חיות",
     "image_link": "https://img.wcdn.co.il/f_auto",
-    "description": "ג'וטו, חתול מתוק שעברת התעללות ונמצא כרגע באומנה במרכז האומנה בנהריה."
+    "description": "ג'וטו\nחתול מתוק שעברת התעללות ונמצא כרגע באומנה במרכז האומנה בנהריה."
   },
   {
     "animale_type": "cat",
@@ -165,7 +166,7 @@
     "phone_num": "054-8944123",
     "organization": "צער בעלי חיים",
     "image_link": "http://cdn.babamail.co.il/Images/2014/12/24/784e822f-4b1a-42a1-9330-46ba0795c641.jpg",
-    "description": "בוני , חתול זכר. עבר תאונה קשה וכעת מחפש מקום חם שיאהב אותו!"
+    "description": "בוני\nחתול זכר. עבר תאונה קשה וכעת מחפש מקום חם שיאהב אותו!"
 
   },
   {
@@ -179,7 +180,7 @@
     "phone_num": "054-8944123",
     "organization": "באר שבע אוהבת חיות",
     "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Siamese_cat.JPG/250px-Siamese_cat.JPG",
-    "description": "רוקט - חתול מהמם וקטן , ננטש ברחוב וכעת מחפש משפחה שתרצה להכניס אותו לחייה"
+    "description": "רוקט\nחתול מהמם וקטן , ננטש ברחוב וכעת מחפש משפחה שתרצה להכניס אותו לחייה"
   },
   {
     "animale_type": "cat",
@@ -192,7 +193,7 @@
     "phone_num": "054-8944123",
     "organization": "נהריה אוהבת חיות",
     "image_link": "https://www.dailybuzz.co.il/wp-content/uploads/2016/10/mn1.png",
-    "description": "קינדי הקטן הגיע אלינו בגיל צעיר מאוד וכעת מחפש בית חם לגדול בו!"
+    "description": "קינדי\nהקטן הגיע אלינו בגיל צעיר מאוד וכעת מחפש בית חם לגדול בו!"
 
   },
   {
@@ -207,7 +208,7 @@
     "organization": "צער בעלי חיים",
     "suitable_for_more_animals": false,
     "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0aElj5iYkC8iywAMJJ719QFVDh5QVOFp0yKwUHyiLqX9R6hMb",
-    "description": "טופי הקטנה הגיעה אלינו בגיל מעט מבוגר וכעת מחפש בית חם לגדול בו!"
+    "description": "טופי\nהגיעה אלינו בגיל מעט מבוגר וכעת מחפש בית חם לגדול בו!"
   },
   {
     "animale_type": "hamster",
@@ -220,7 +221,7 @@
     "phone_num": "054-8944123",
     "organization": "צער בעלי חיים סניף אילת",
     "image_link": "https://www.ken-hatuki.co.il/wp-content/uploads/2013/03/HamsterREX468x362-main_Full.jpg",
-    "description": "אוגר קטן בשם שחף ומתוק שמחפש בית חם שיאהב אותו"
+    "description": "אוגי\nאוגר קטן בשם שחף ומתוק שמחפש בית חם שיאהב אותו"
 
   },
   {
@@ -234,7 +235,7 @@
     "phone_num": "054-8944123",
     "organization": "צער בעלי חיים רמת הגולן",
     "image_link": "https://www.tiuli.com/image/11b2213f3396c4e4fc0639ee33f9fdb0.jpg?&width=830&height=470",
-    "description": "לטאה קטן ולא מלכלכלת שלא דורשת הרבה יחס"
+    "description": "נטלי\nלטאה קטן ולא מלכלכלת שלא דורשת הרבה יחס"
 
   },
   {
@@ -248,7 +249,7 @@
     "phone_num": "054-8944123",
     "organization": "מכלאת חיות - יהוד",
     "image_link": "https://www.hashikma-holon.co.il/wp-content/uploads/2018/06/c7269ecb5462f23744119df16554272a-e1529398191949.jpg",
-    "description": "נחש מסוג פיתון מתאים לבתים עם גינה, רצוי להשאיר בכלוב."
+    "description": "נוני\nנחש מסוג פיתון מתאים לבתים עם גינה, רצוי להשאיר בכלוב."
 
   },
   {
@@ -262,7 +263,7 @@
     "phone_num": "054-8944123",
     "organization": "צער בעלי חיים - אזור הדרום",
     "image_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Testudo_graeca02.jpg/250px-Testudo_graeca02.jpg",
-    "description": "צב בשם שבי שנמצא נטוש עם גב שבור , עבר טיפול ארוך ומחפש כעת בית חם להיקלט בו"
+    "description": "ציון\nצב בשם שבי שנמצא נטוש עם גב שבור , עבר טיפול ארוך ומחפש כעת בית חם להיקלט בו"
 
   },
   {
@@ -276,7 +277,7 @@
     "phone_num": "054-8944123",
     "organization": "חיה אוהבת חיות",
     "image_link": "http://www.biopet.co.il/app/uploads/2016/02/dwf.png",
-    "description": "תוכי ידידותי שננטש באזור חיפה, מחפש מקום חם"
+    "description": "רוברט\nתוכי ידידותי שננטש באזור חיפה, מחפש מקום חם"
   },
   {
     "animale_type": "parrot",
@@ -289,7 +290,7 @@
     "phone_num": "054-8944123",
     "organization": "בת ים אוהבת חיות",
     "image_link": "https://www.mikmik.co.il/wp-content/uploads/2015/12/P597060.jpg",
-    "description": "תוכי ידידותי לסביבה , מסתדר היטב עם ילדים"
+    "description": "גאק\nתוכי ידידותי לסביבה , מסתדר היטב עם ילדים"
 
   }
 ]
