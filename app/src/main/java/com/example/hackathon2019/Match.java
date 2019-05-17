@@ -14,17 +14,23 @@ public class Match {
     public int getMatch(){
         // returns a percentage of match
         int match = 0;
-        if (allergyMatch() && otherAnimalsMatch()){
-            match += residenceMatch() + treatmentMatch() + areaMatch() + friendlyMatch();
+        if (otherAnimalsMatch()){
+            match += residenceMatch() + treatmentMatch() + areaMatch() + friendlyMatch() - allergyMatch();
         }
         return match;
 
     }
 
-    private boolean allergyMatch()
+    private int allergyMatch()
     {
         //return true if not allergic or not allergic to this animal.
-        return !(user.questionnaire.allergies);
+        int count = 0;
+        if(user.questionnaire.allergies){
+            if(animal.animalType == "dog" || animal.animalType == "cat" || animal.animalType == "rabbit"){
+                count = 10;
+            }
+        }
+        return count;
     }
 
     private boolean otherAnimalsMatch()
