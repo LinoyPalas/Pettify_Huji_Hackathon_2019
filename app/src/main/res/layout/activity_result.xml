@@ -43,7 +43,7 @@
         android:id="@+id/lin2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="15dp"
         android:layout_below="@id/lin1">
 
         <TextView
