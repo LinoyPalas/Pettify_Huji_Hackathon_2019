@@ -21,7 +21,6 @@ public class ResultActivity extends AppCompatActivity {
 
     public ImageButton btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8;
     public TextView txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8;
-    static ArrayList<UniquePair> data = QuestionActivity.runSearch.bestMatch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,19 +47,18 @@ public class ResultActivity extends AppCompatActivity {
         String[] imgArray = new String[8];
         String[] descArray = new String[8];
         for (int i = 0; i < 8; i++) {
-            imgArray[i] = data.get(i).animal.imageLink;
-            descArray[i] = data.get(i).animal.description;
+            imgArray[i] = QuestionActivity.matches.get(i).animal.imageLink;
+            descArray[i] = QuestionActivity.matches.get(i).animal.description;
         }
 
-//        txt1.setText(descArray[0]);
-//        txt2.setText(descArray[1]);
-//        txt3.setText(descArray[2]);
-//        txt4.setText(descArray[3]);
-//        txt5.setText(descArray[4]);
-//        txt6.setText(descArray[5]);
-//        txt7.setText(descArray[6]);
-//        txt8.setText(descArray[7]);
-
+        txt1.setText(descArray[0]);
+        txt2.setText(descArray[1]);
+        txt3.setText(descArray[2]);
+        txt4.setText(descArray[3]);
+        txt5.setText(descArray[4]);
+        txt6.setText(descArray[5]);
+        txt7.setText(descArray[6]);
+        txt8.setText(descArray[7]);
 
 
     }

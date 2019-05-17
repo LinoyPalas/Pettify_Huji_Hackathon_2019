@@ -19,6 +19,6 @@ public class CalculatingActivity extends AppCompatActivity {
                 Intent i = new Intent(CalculatingActivity.this, ResultActivity.class);
                 startActivity(i);
             }
-        }, 8000);
+        }, 7000);
     }
 }

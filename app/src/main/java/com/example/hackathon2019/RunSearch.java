@@ -32,7 +32,7 @@ public class RunSearch {
     Match matcher;
     float[] scores;
     ArrayList<UniquePair> bestMatch;
-    String jsonFile = "C:\\Users\\Omer Liberman\\Desktop\\Hackathon2019\\app\\src\\main\\java\\com\\example\\hackathon2019\\animals.json";
+    String jsonFile = "/com/example/hackathon2019/animals.json";
 
 
     RunSearch(User user) {
@@ -47,7 +47,7 @@ public class RunSearch {
             String text = new String(Files.readAllBytes(Paths.get(jsonFile)), StandardCharsets.UTF_8);
 
             JSONObject obj = new JSONObject(text);
-            JSONArray arr = obj.getJSONArray("com/example/hackathon2019/animals.json");
+            JSONArray arr = obj.getJSONArray("/com/example/hackathon2019/animals.json");
 
             for (int i = 0; i < arr.length(); i++) {
                 String type = arr.getJSONObject(i).getString("animale_type");

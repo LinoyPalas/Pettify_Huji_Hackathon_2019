@@ -12,6 +12,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
+import java.util.ArrayList;
+
 public class QuestionActivity extends AppCompatActivity {
 
     public ViewFlipper signupFlipper;
@@ -44,7 +46,8 @@ public class QuestionActivity extends AppCompatActivity {
 
     static Questionnaire curQS;
     static User user;
-    static RunSearch runSearch;
+    static Data data;
+    static ArrayList<UniquePair> matches;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -228,7 +231,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void pickNorth(View v) {
-        location = "North";
+        location = "north";
         northButton.setBackground(getResources().getDrawable(R.drawable.map_01_sel));
         centerButton.setBackground(getResources().getDrawable(R.drawable.map_02));
         southButton.setBackground(getResources().getDrawable(R.drawable.map_03));
@@ -236,7 +239,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void pickCenter(View v) {
-        location = "Center";
+        location = "center";
         northButton.setBackground(getResources().getDrawable(R.drawable.map_01));
         centerButton.setBackground(getResources().getDrawable(R.drawable.map_02_sel));
         southButton.setBackground(getResources().getDrawable(R.drawable.map_03));
@@ -244,7 +247,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void pickSouth(View v) {
-        location = "South";
+        location = "south";
         northButton.setBackground(getResources().getDrawable(R.drawable.map_01));
         centerButton.setBackground(getResources().getDrawable(R.drawable.map_02));
         southButton.setBackground(getResources().getDrawable(R.drawable.map_03_sel));
@@ -387,8 +390,26 @@ public class QuestionActivity extends AppCompatActivity {
         curQS = new Questionnaire(personalStatus, livingArrangement, location, extraAnimals,
                 allergic, job, animalFriendly);
         user = new User(curQS);
-        runSearch = new RunSearch(user);
+        data = new Data();
+        class UniquePair implements Comparable<com.example.hackathon2019.UniquePair> {
+            public Integer score;
+            public Animal animal;
 
+            UniquePair(int score, Animal animal) {
+                this.score = score;
+                this.animal = animal;
+            }
+
+            public int compareTo(com.example.hackathon2019.UniquePair other) {
+                return this.score.compareTo(other.score);
+            }
+        }
+        matches = new ArrayList<>(20);
+        for(int i = 0; i <20; i++){
+            Match match = new Match(data.allAnimals[i], user);
+            UniquePair pair = new UniquePair(match.getMatch(), data.allAnimals[i]);
+            matches.add(pair);
+        }
     }
 
 }
