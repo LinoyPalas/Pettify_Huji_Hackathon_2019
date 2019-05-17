@@ -1,18 +1,18 @@
-
+    
 [
   {
 
-    "animale_type": "dog",
-    "area": "south",
-    "suitable_for_apartment": 0,
-    "friendly": true,
-    "treatment": 1,
-    "suitable_for_more_animals": true,
-    "city":"מצפה רמון",
-    "phone_num":"0545878684" ,
-    "organization":"יד 4",
-    "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091201/extra_large/ebff7ce75fd8b985f8c0bc593b704e03.jpg",
-    "description": "דני\nכלב קטן ומתוק, שמחפש משפחה אוהבת.\nדני כלב נוח וקל לטיפול. אוהב אנשים וחיות אחרות. "
+  "animale_type": "dog",
+  "area": "south",
+  "suitable_for_apartment": 0,
+  "friendly": true,
+  "treatment": 1,
+  "suitable_for_more_animals": true,
+  "city":"מצפה רמון",
+  "phone_num":"0545878684" ,
+  "organization":"יד 4",
+  "image_link": "https://d3m9l0v76dty0.cloudfront.net/system/photos/2091201/extra_large/ebff7ce75fd8b985f8c0bc593b704e03.jpg",
+  "description": "דני\nכלב קטן ומתוק, שמחפש משפחה אוהבת.\nדני כלב נוח וקל לטיפול. אוהב אנשים וחיות אחרות. "
 
   },
   {

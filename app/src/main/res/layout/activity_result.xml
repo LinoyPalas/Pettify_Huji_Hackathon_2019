@@ -1,9 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4E4E50"
     tools:context=".ResultActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/secular_one"
+        android:text="החבר החדש שלך הוא..."
+        android:textColor="#CDDC39"
+        android:textSize="36sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/titleTextView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn1"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:background="@drawable/map_01"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:text="placeholder"
+                    android:textColor="#CDDC39" />
+
+                <ImageButton
+                    android:id="@+id/btn2"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:background="@drawable/map_01"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:text="placeholder"
+                    android:textColor="#CDDC39" />
+
+                <ImageButton
+                    android:id="@+id/btn3"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:background="@drawable/map_01"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:text="placeholder"
+                    android:textColor="#CDDC39" />
+
+                <ImageButton
+                    android:id="@+id/btn4"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/map_01" />
+
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:text="placeholder"
+                    android:textColor="#CDDC39" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn5"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:background="@drawable/map_01"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:text="placeholder"
+                    android:textColor="#CDDC39" />
+
+                <ImageButton
+                    android:id="@+id/btn6"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:background="@drawable/map_01"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:text="placeholder"
+                    android:textColor="#CDDC39" />
+
+                <ImageButton
+                    android:id="@+id/btn7"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:background="@drawable/map_01"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:text="placeholder"
+                    android:textColor="#CDDC39" />
+
+                <ImageButton
+                    android:id="@+id/btn8"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:background="@drawable/map_01"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:text="placeholder"
+                    android:textColor="#CDDC39" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
