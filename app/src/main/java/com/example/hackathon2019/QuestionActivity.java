@@ -42,6 +42,10 @@ public class QuestionActivity extends AppCompatActivity {
     static public int job;
     static public boolean allergic;
 
+    static Questionnaire curQS;
+    static User user;
+    static RunSearch runSearch;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -355,6 +359,7 @@ public class QuestionActivity extends AppCompatActivity {
         if (questionCount == numberOfQuestions[currentCategory]-1 && currentCategory == 3) {
             nextButton.setVisibility(View.GONE);
             Intent startIntent = new Intent(getApplicationContext(), CalculatingActivity.class);
+            createOS();
             startActivity(startIntent);
         }
         else{
@@ -378,9 +383,12 @@ public class QuestionActivity extends AppCompatActivity {
         }
     }
 
-    static Questionnaire curQS = new Questionnaire(personalStatus, livingArrangement, location, extraAnimals,
-            allergic, job, animalFriendly);
-    static User user = new User(curQS);
-    static RunSearch runSearch = new RunSearch(user);
+    public void createOS(){
+        curQS = new Questionnaire(personalStatus, livingArrangement, location, extraAnimals,
+                allergic, job, animalFriendly);
+        user = new User(curQS);
+        runSearch = new RunSearch(user);
+
+    }
 
 }
