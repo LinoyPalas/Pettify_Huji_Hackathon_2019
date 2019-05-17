@@ -17,8 +17,7 @@ public class Match {
         if (otherAnimalsMatch()){
             match += residenceMatch() + treatmentMatch() + areaMatch() + friendlyMatch() - allergyMatch();
         }
-        return match;
-
+        return Math.max(match,0);
     }
 
     private int allergyMatch()
@@ -27,7 +26,7 @@ public class Match {
         int count = 0;
         if(user.questionnaire.allergies){
             if(animal.animalType == "dog" || animal.animalType == "cat" || animal.animalType == "rabbit"){
-                count = 10;
+                count = 30;
             }
         }
         return count;
