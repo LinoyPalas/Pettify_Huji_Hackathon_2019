@@ -82,6 +82,7 @@ public class RunSearch {
             Match matcher = new Match(this.allAnimals.get(i), this.user);
             results.add(new UniquePair(matcher.getMatch(), this.allAnimals.get(i)));
         }
+        Collections.sort(results);
         Collections.reverse(results);
 
         this.bestMatch = new ArrayList<UniquePair>(results.subList(0, 6));
