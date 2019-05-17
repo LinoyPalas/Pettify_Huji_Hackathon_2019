@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
@@ -394,14 +395,15 @@ public class QuestionActivity extends AppCompatActivity {
         user = new User(curQS);
         data = new Data();
         matches = new ArrayList<UniquePair>(20);
-        for(int i = 0; i <3; i++){
+        for(int i = 0; i <20; i++){
             Match match = new Match(data.allAnimals.get(i), user);
             UniquePair pair = new UniquePair(match.getMatch(), data.allAnimals.get(i));
             matches.add(pair);
         }
+        Collections.sort(matches);
     }
 
-    class UniquePair implements Comparable<com.example.hackathon2019.UniquePair> {
+    class UniquePair implements Comparable<UniquePair> {
         public Integer score;
         public Animal animal;
 
@@ -410,7 +412,7 @@ public class QuestionActivity extends AppCompatActivity {
             this.animal = animal;
         }
 
-        public int compareTo(com.example.hackathon2019.UniquePair other) {
+        public int compareTo(UniquePair other) {
             return this.score.compareTo(other.score);
         }
     }

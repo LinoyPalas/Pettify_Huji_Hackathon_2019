@@ -33,37 +33,43 @@ public class ResultActivity extends AppCompatActivity {
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
         btn4 = findViewById(R.id.btn4);
-//        btn5 = findViewById(R.id.btn5);
-//        btn6 = findViewById(R.id.btn6);
-//        btn7 = findViewById(R.id.btn7);
-//        btn8 = findViewById(R.id.btn8);
+        btn5 = findViewById(R.id.btn5);
+        btn6 = findViewById(R.id.btn6);
+        btn7 = findViewById(R.id.btn7);
+        btn8 = findViewById(R.id.btn8);
         txt1 = findViewById(R.id.txt1);
         txt2 = findViewById(R.id.txt2);
         txt3 = findViewById(R.id.txt3);
         txt4 = findViewById(R.id.txt4);
-//        txt5 = findViewById(R.id.txt5);
-//        txt6 = findViewById(R.id.txt6);
-//        txt7 = findViewById(R.id.txt7);
-//        txt8 = findViewById(R.id.txt8);
+        txt5 = findViewById(R.id.txt5);
+        txt6 = findViewById(R.id.txt6);
+        txt7 = findViewById(R.id.txt7);
+        txt8 = findViewById(R.id.txt8);
 
         String[] imgArray = new String[20];
         String[] descArray = new String[20];
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 20; i++) {
             imgArray[i] = QuestionActivity.matches.get(i).animal.imageLink;
             descArray[i] = QuestionActivity.matches.get(i).animal.description;
         }
 
-        txt1.setText(descArray[0]);
-        txt2.setText(descArray[1]);
-//        txt3.setText(descArray[2]);
-//        txt4.setText(descArray[3]);
-//        txt5.setText(descArray[4]);
-//        txt6.setText(descArray[5]);
-//        txt7.setText(descArray[6]);
-//        txt8.setText(descArray[7]);
+        txt1.setText(descArray[0] + "\n" + QuestionActivity.matches.get(0).animal.phoneNum);
+        txt2.setText(descArray[1] + "\n" + QuestionActivity.matches.get(1).animal.phoneNum);
+        txt3.setText(descArray[2] + "\n" + QuestionActivity.matches.get(2).animal.phoneNum);
+        txt4.setText(descArray[3] + "\n" + QuestionActivity.matches.get(3).animal.phoneNum);
+        txt5.setText(descArray[4] + "\n" + QuestionActivity.matches.get(4).animal.phoneNum);
+        txt6.setText(descArray[5] + "\n" + QuestionActivity.matches.get(5).animal.phoneNum);
+        txt7.setText(descArray[6] + "\n" + QuestionActivity.matches.get(6).animal.phoneNum);
+        txt8.setText(descArray[7] + "\n" + QuestionActivity.matches.get(7).animal.phoneNum);
 
         LoadImageFromWebOperations(imgArray[0], btn1);
         LoadImageFromWebOperations(imgArray[1], btn2);
+        LoadImageFromWebOperations(imgArray[2], btn3);
+        LoadImageFromWebOperations(imgArray[3], btn4);
+        LoadImageFromWebOperations(imgArray[4], btn5);
+        LoadImageFromWebOperations(imgArray[5], btn6);
+        LoadImageFromWebOperations(imgArray[6], btn7);
+        LoadImageFromWebOperations(imgArray[7], btn8);
 
 
 
