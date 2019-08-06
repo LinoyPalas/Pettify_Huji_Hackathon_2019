@@ -5,9 +5,3 @@ In the backend we created a database which is based on data given by non-profit 
 Our goal is to make pets adoption more afordable and easy to people ,
 and to give people few options for pets which is "good" or "fit" their needs and abilities.
 
-Authors :
-- Omer Liberman , HUJI 
-- Shahaf Herman, HUJI
-- May Tal, HUJI
-- Roni Gottesman, HUJI
-- Guy Bloomenfeld, HUJI
